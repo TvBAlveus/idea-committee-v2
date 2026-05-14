@@ -3509,6 +3509,20 @@ function openHoldDetail(name) {
   if (gridContainer) {
     gridContainer.insertAdjacentHTML('beforebegin', dashboardHtml);
   }
+
+
+// Dynamische Tab-Counter
+(function updateTabCounts() {
+  const tab1 = document.querySelector('button[data-tab="holdranking"]');
+  const tab2 = document.querySelector('button[data-tab="pipeline"]');
+  if (tab1 && typeof holdRanking !== 'undefined') {
+    tab1.textContent = '🎯 Tiefenbewertung (' + holdRanking.length + ')';
+  }
+  if (tab2 && typeof pipeline !== 'undefined') {
+    tab2.textContent = '📚 Alle gescreenten Ideen (' + pipeline.length + ')';
+  }
+})();
+
 })();
 
 </script>
