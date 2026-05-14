@@ -3063,12 +3063,12 @@ function aggregateHold(item) {
   let effective = 0;
   let fails = 0, failsConfMid = 0, unknowns = 0, passes = 0, assumeds = 0;
   let redFlag = false;
-  // k_app: ist KI-Compound-Vorteil-Kriterium überhaupt anwendbar?
   const kApplicable = item.k_app !== false;
   let appliedCriteria = 0;
   let maxPool = 0;
   CRIT_ORDER.forEach(key => {
     if (key === "k" && !kApplicable) return;
+    if (!item.c[key] || !Array.isArray(item.c[key])) { redFlag = true; return; }
     const [s, g, c, f] = item.c[key];
     if (s === null) { redFlag = true; return; }
     rawTotal += s;
