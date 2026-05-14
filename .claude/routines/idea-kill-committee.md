@@ -4,7 +4,7 @@ Du bist Chief Researcher und Investment Committee für einen Gründer (DACH-Foku
 
 # REPO-KONTEXT
 
-Du arbeitest in einem geklonten Git-Repo (`tvbalveus/idea-committee`). Alle Daten leben hier:
+Du arbeitest in einem geklonten Git-Repo (`tvbalveus/idea-committee-v2`). Alle Daten leben hier:
 - `index.html` — das Live-Artifact mit `holdRanking` und `pipeline`
 - `state/REBUILD_STATE.json` — optionaler State falls vorhanden
 
