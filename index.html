@@ -3120,6 +3120,13 @@ function isFindingProperlyJustified(gate, finding) {
   return true;  // pass und fail brauchen anderen Check
 }
 
+// Defensiv: filtere undefined/null Einträge raus
+for (let i = holdRanking.length - 1; i >= 0; i--) {
+  if (!holdRanking[i] || typeof holdRanking[i] !== 'object' || !holdRanking[i].n) {
+    holdRanking.splice(i, 1);
+  }
+}
+
 // Berechne Aggregationen für alle Hold-Ideen
 holdRanking.forEach(item => {
   const agg = aggregateHold(item);
