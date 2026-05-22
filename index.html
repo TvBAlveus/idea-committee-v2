@@ -8,7 +8,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Idea Kill Committee – Daily Pipeline (21.05.2026)</title>
+<title>Idea Kill Committee – Daily Pipeline (22.05.2026)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
 <style>
@@ -168,12 +168,17 @@ table.criteria td:first-child { color: var(--muted); width: 220px; }
 <div class="container">
   <header>
     <h1>Idea Kill Committee – Daily Pipeline</h1>
-    <div class="meta">Run-Datum: <strong>Dienstag, 19. Mai 2026 (Daily)</strong> · Modus: 100 Ideen Triage + 6 Volle Bewertungen · Geographie: DACH · Zielprofil: ca. 20 Mio. Umsatz in 5 Jahren, möglichst bootstrappbar · <strong>Schwellwert heute: 80</strong> (Fall A — &lt; 3 Top-Ideen mit norm ≥ 80)</div>
+    <div class="meta">Run-Datum: <strong>Freitag, 22. Mai 2026 (Daily)</strong> · Modus: 100 Ideen Triage + 8 Volle Bewertungen + 3 Stage-3 + 2 Stage-4 + 1 Stage-5 · Geographie: DACH · Zielprofil: ca. 20 Mio. Umsatz in 5 Jahren, möglichst bootstrappbar · <strong>Schwellwert heute: 80</strong> (Fall A — &lt; 3 Top-Ideen mit norm ≥ 80) · <strong style="color:#5a3d00;background:#ffd700;padding:2px 8px;border-radius:4px;">🎯 NEU: 1 interview-pending — Data-Act-Compliance-Stack Maschinenbau</strong></div>
   </header>
 
 
-  <nav class="tabs">    <button class="tab-btn active" data-tab="holdranking">🎯 Tiefenbewertung (95)</button>
-    <button class="tab-btn" data-tab="pipeline">📚 Alle gescreenten Ideen (812)</button>
+  <div style="background:#ffd700; color:#5a3d00; padding:14px 18px; border-radius:10px; margin-bottom:18px; border:2px solid #c9a800;">
+    <strong style="font-size:15px;">🎯 NEUE TOP-TIER IDEE — INTERVIEW-PENDING (22.05.2026)</strong><br>
+    <span style="font-size:13px;">"Data-Act-Compliance-Stack Maschinenbau" hat alle 5 Stages durchlaufen (Effective Deep-Score norm ≈ 90, Stage 4 Pre-Mortem alle 5 Szenarien &lt;30%, Stage 5 Customer-Validation 5 named-Buyer + Pool 3.600 verifiziert). <strong>Next:</strong> 3+ Buyer-Calls über VDMA-Channel (Stefan Zimmermann/Trumpf, Dr. Eva Reichel/Index-Werke, Thomas Hilden/Hilden Spannsysteme).</span>
+  </div>
+
+  <nav class="tabs">    <button class="tab-btn active" data-tab="holdranking">🎯 Tiefenbewertung (103)</button>
+    <button class="tab-btn" data-tab="pipeline">📚 Alle gescreenten Ideen (912)</button>
     <button class="tab-btn" data-tab="logik">Methodik &amp; Kriterien</button>  </nav>
 
   <!-- ============================================================ -->
@@ -182,7 +187,7 @@ table.criteria td:first-child { color: var(--muted); width: 220px; }
   <section id="tab-pipeline" class="tab-content">
     <h2>Alle gescreenten Ideen – Master-Liste mit Quick-Score (1-10)</h2>
     <p class="legend">Wächst täglich. Enthält ALLE Ideen aller bisherigen Runs (Hold, Proceed, Reject). Klick auf eine Idee mit <strong>📋</strong>-Icon öffnet die vollständige Deep-Dive-Auswertung. 95 von 702 Ideen haben einen Deep-Dive. Theme-Marker: <strong>🛐</strong> Kirche · <strong>🌙</strong> Schlaf · <strong>🌅</strong> Senioren / Best Ager · <strong>🐾</strong> Tier-Nahrungsergänzung. Einträge ohne Marker = Daily-Run.</p>
-    <p class="legend" style="margin-top:6px; color:#6b5300;">⚠️ Vorhandene Runs: Daily 08.05 (50), Daily 10.05 (50), Daily 12.05 (50), Daily 14.05 (50), Daily 14.05 Run-2 (100), Daily 14.05 Run-3 (100), Daily 15.05 (100), Themen-Run Kirche 08.05 (50), Themen-Run Schlaf 11.05 (50), Themen-Run Senioren 11.05 (50), Themen-Run Tier-Nahrungsergänzung 11.05 (50) = 702 Einträge total.</p>
+    <p class="legend" style="margin-top:6px; color:#6b5300;">⚠️ Vorhandene Runs: ... + Daily 19.05 (100), Daily 20.05 (100), Daily 21.05 (100), <strong>Daily 22.05 (100)</strong> = 912 Einträge total.</p>
     <div id="grid-pipeline"></div>
   </section>
 
@@ -1582,6 +1587,107 @@ const pipeline = [
   ["2026-05-21","Mediation-Plattform Familienrecht","LegalTech B2C","Conny+Familienrecht","-",3,"Reject","B2C zerstreut"],
   ["2026-05-21","Pflegekräfte-Hire-Plattform","HRTech","HireQuartier+Stepstone Pflege","1,3 Mio Pflegekräfte",5,"Reject","Pflege-Hire-Markt überfüllt"],
   ["2026-05-21","AI-Logistik-Schadenmeldung KMU","LogTech","-","12k KMU-Spediteure",4,"Reject","Spedi-Software etabliert"],
+  // ---- Daily-Run 22. Mai 2026 (100 Ideen) ----
+  ["2026-05-22","Data-Act-Compliance-Stack Maschinenbau","RegTech/Industry","Vanta auf Data Act","3.600 DE-Maschinenbauer >50 MA",9,"Hold","12.09.26 Pflicht Direktzugriff IoT-Daten + OPC UA VDMA-Standard"],
+  ["2026-05-22","CRA-Konformitäts-Stack B2B-Softwarehersteller","RegTech/Cyber","Vanta SBOM-only","~8.000 DE-B2B-Softwarehersteller mit Produkt",9,"Hold","CRA 11.12.27 Pflicht; ONEKEY zielt auf Embedded; Wedge: pure-Software statt Embedded"],
+  ["2026-05-22","ECGT-Greenwashing-Marketing-Audit","RegTech/ESG","Tocco.Earth+greenclaims-scanner","3.000 DE Konzerne >250 MA mit Marketing-Claims",8,"Hold","ECGT 27.09.26 Pflicht; KMU 18 Mo Übergangsfrist; Markt jung"],
+  ["2026-05-22","AI-Act-Hochrisiko-Pre-Audit Mittelstand","RegTech/AI","Modulos/Holistic-AI für DACH-KMU","~5.000 DE-Mittelstandsfirmen mit Hochrisiko-AI",8,"Hold","02.08.26 Pflicht KI-MIG Feb 26; Pool gut, aber 4+ DACH-Anbieter"],
+  ["2026-05-22","PFAS-Trinkwasser-Compliance-Suite Stadtwerke","RegTech/Wasser","RiskPlus für PFAS","6.000 Wasserversorger DE",8,"Hold","PFAS-Grenzwert 12.01.26 Pflicht; RiskPlus/TZW-Halbmonopol"],
+  ["2026-05-22","DigiPP-Digitaler-Produktpass Mittelstand","RegTech/Industry","Optel für ESPR","Maschinen/Elektro/Textilien 100-2k MA",8,"Hold","ESPR 2027 Batteriepass 2027; Markt früh, viel Spielraum"],
+  ["2026-05-22","Forced-Labour-Reg-Lieferkette Importeure","RegTech/Import","Sayari+Sourcemap","6.000 DE Importeure >10 Mio Umsatz",8,"Hold","14.12.27 Pflicht; alle Importeure; Pre-Investigation-Doku"],
+  ["2026-05-22","Repair-Score-Stack Geräte-Hersteller","RegTech/Industrie","iFixit+ProduktDatenfabrik","Smartphone/Haushalt-Hersteller 500+ MA",8,"Hold","31.07.26 Pflicht R2R; Ersatzteil-Portale + Preisliste"],
+  ["2026-05-22","AI-Pflegeantragsmanager Pflegekassen","HealthTech/AI","Spellbook auf SGB XI Pflegekasse","105 gesetz. Pflegekassen + Privat-PV",7,"Hold","Pflegegrad-Begutachtung 4 Mio/J; PUEG Reform 2025"],
+  ["2026-05-22","Notar-Vorbescheid-Drafting-AI","LegalTech/AI","Spellbook für Notare","8.000 DE-Notare",7,"Hold","BNotO-Reform 26; eUR-Pflicht 24; Spezialnische"],
+  ["2026-05-22","AI-Bauleitlinien-Sortierer Architekt","ConTech/AI","Spellbook für Bauordnung","135k DE-Architekten",7,"Hold","BauO-Reform 16 BL + DIBt-Aktualisierungen 26"],
+  ["2026-05-22","Mietkautions-Treuhand-as-a-Service","FinTech/B2B","DKB-Mietkaution-Plus","16k WoBe + 22k Hausverwalter",7,"Hold","Pflicht-Mietkautions-Trennung BGB § 551; Konto-Aufwand"],
+  ["2026-05-22","Vergabe-Sentinel KMU","GovTech/AI","DTAD+evergabe für KMU","420k öff. Auftraggeber + 800k KMU",7,"Hold","UVgO+OberschwellenVO-Reform 26; AI-Matching"],
+  ["2026-05-22","KassenSichV-Audit-Stack Kassen-Hersteller","RegTech/FinTech","DATEV für Kasse","60k Gastronomen/Einzelhändler GoBD",7,"Hold","KassenSichV-Verschärfung TSE-Audit 26"],
+  ["2026-05-22","Mittelstand-Cloud-Switching-Tracker Data-Act","RegTech/Cloud","BoxyHQ für Data-Act-Cloud","800k DE-Cloud-Kunden",7,"Hold","12.01.27 Switching-Fees Null + dokumentationspflicht"],
+  ["2026-05-22","Kindertagespflege-Verwaltung Tagesmütter","EdTech/B2C","Famly für Tagesmütter","45k Tagespflegepersonen",7,"Hold","KitaQEG-Reform 24; Pflicht-Doku § 22 SGB VIII"],
+  ["2026-05-22","Stiftungsverwaltung-Stack Mittelstand","NonProfit-SaaS","Givebutter+SeamlessGiving","25.000 rechtsfähige Stiftungen DE",7,"Hold","StiftG-Reform 7/23; Vorstand-Pflichten verschärft"],
+  ["2026-05-22","Stallpflicht-Monitor Tierhalter","AgriTech/Compliance","FarmCheck+TierWohlBR","165k Tierhalter DE",7,"Hold","Tierschutz-Reform 26; Pflicht-Doku verschärft"],
+  ["2026-05-22","Ehrenamts-Pauschale-Auditstack Vereine","LegalTech/B2B","sevDesk für Vereine","600k Vereine + 22 Mio Engagierte",7,"Hold","GemNZG-Reform 24 + 3000 EUR EAP Pflicht-Doku"],
+  ["2026-05-22","Stoffstrombilanz-AI Landwirtschaft","AgriTech/Compliance","FieldClimate+LandAI","270k landw. Betriebe DE",7,"Hold","StoffBilV-Reform 26; Pflicht Düngeplanung"],
+  ["2026-05-22","Berufsfeuerwehr-Schichtoptimierer","GovTech/HR","Klara für Feuerwehr","112 Berufsfeuerwehren DE",7,"Hold","Arbeitszeit-Reform Feuerwehr 26; 48h-Grenze"],
+  ["2026-05-22","Förder-Akquise-AI Energieberater","FinTech/AI","Spellbook für BAFA","36k Energieberater + KMU-Förder",7,"Hold","KfW-Reform + EnEffG-Welle 26"],
+  ["2026-05-22","Sanierungsfahrplan-AI iSFP","PropTech/AI","Plan-A für iSFP","12k iSFP-Berater + 22 Mio Eigentümer",7,"Hold","iSFP-Förder GEG-Pflicht 26"],
+  ["2026-05-22","Bürokratieentlastung-Index Mittelstand","B2B-SaaS","Bplans+Mittelstand-Atlas","3,3 Mio Mittelständler",7,"Hold","BEG-IV verabschiedet 25; Reform-Welle"],
+  ["2026-05-22","Bauarbeiter-Krankenkassenwechsel-AI","HealthTech/B2C","Check24 für Bauarbeiter","1,5 Mio Bauarbeiter",6,"Hold","TVgV-Reform 26"],
+  ["2026-05-22","Vereinsregister-Update-Service","LegalTech/B2B","RechtsAnwalt-Mate für Vereine","600k Vereine",6,"Hold","Vereinsregister-Reform 24"],
+  ["2026-05-22","Bürozeit-AI Steuerberater","LegalTech/AI","Toggl+Harvest für StB","84k Steuerberater",6,"Hold","DATEV-Walled-Garden"],
+  ["2026-05-22","Mobile-Krankenpflege-Routing","HealthTech/Log","Routific für Pflege","15k amb. Pflegedienste",6,"Hold","Pflegekassen-Reform 25; Routenmanagement"],
+  ["2026-05-22","AI-Apotheken-Lager Apothekenreform","HealthTech/B2B","Pharmatechnik-Add-On","18.000 öff. Apotheken",6,"Hold","ApoVWG 22.05.26 verabschiedet; Lager-Pain"],
+  ["2026-05-22","Kühlhaus-Compliance-Stack","FoodTech/RegTech","FoodAtlas für KH","2.500 Kühlhäuser DE",6,"Hold","Kältemittel-Verbotsverordnung 26"],
+  ["2026-05-22","GoBD-AI-Validator Steuerkanzlei","LegalTech/AI","DATEV-Plug-in","84k StB + 800k KMU",6,"Hold","GoBD-Welle Schicht 26"],
+  ["2026-05-22","Schiffsregister-Brokerage Binnenflotte","FinTech/B2B","Boatsetter Sub","12.000 Binnenschiffe DE",6,"Hold","BinSchiffR-Reform 26"],
+  ["2026-05-22","Krankenhaus-MD-Vorbereitungs-AI","HealthTech/AI","Spellbook für KH-Sozialdienst","1.900 KH-Sozialdienste",6,"Hold","KHRG-Reform 24; bereits in 20.05 Pipeline"],
+  ["2026-05-22","NIS2-Awareness-Trainings-Stack","Cyber/B2B","KnowBe4 für NIS2","30k NIS2-Unternehmen",6,"Hold","KnowBe4/Hornetsecurity etabliert"],
+  ["2026-05-22","Hochschulen-Drittmittel-AI","EdTech/AI","Anaqua+DFG-Forms","400 DE Hochschulen + 84 außeruniv. Inst.",6,"Hold","DFG-Onlinepflicht 26"],
+  ["2026-05-22","GefStoff-AI-KMU-Stack","RegTech/Industry","SafeSlate für GefStoffV","800k KMU mit Gefahrstoffen",6,"Hold","GefStoffV-Reform 24"],
+  ["2026-05-22","Lieferanten-PFAS-Kollektor Industrie","RegTech/Chemie","iPoint für PFAS-only","12k DE-Industrie-Importeure",6,"Hold","PFAS-EU-Bann Vorschlag 27"],
+  ["2026-05-22","Klima-Bonus-Anwartschaft-Tracker AG","HRTech/AI","Lattice-OKR-Klima","65k DE-Unternehmen mit Klima-OKR",6,"Hold","DR-CO2-Plicht-Trend 27"],
+  ["2026-05-22","Bauanmeldungs-Vorbescheid-AI","ConTech/AI","Spellbook für Bauantrag","270k Bauanträge/J DE",6,"Hold","BauO-Reform; Konkurrenz wachsend"],
+  ["2026-05-22","AI-Volksabstimmungs-Vorberatung Kommunen","GovTech/AI","Speak-AI für Bürgerbeteilig.","11k Kommunen",6,"Hold","BeschG-Reform 26; Konkurrenz Civocracy"],
+  ["2026-05-22","Branchen-IDW-Standard-Berater Wirtschaftsprüfer","LegalTech/AI","Auditboard für WP","17k WP DE",6,"Hold","IDW-Standards-Welle 26; KPMG-CC-AI Inkumbent"],
+  ["2026-05-22","AI-Tarifrundkommunikation Betriebsrat","HRTech/AI","Lattice für Betriebsrat","160k DE-Betriebsräte",6,"Hold","BetrVG-Reform 25; klein"],
+  ["2026-05-22","DSGVO-Verarbeitungsverz.-AI Mittelstand","RegTech/AI","DataGuard-Add-On für KMU","850k KMU mit DSGVO-VV",6,"Hold","DataGuard/Proliance dominant"],
+  ["2026-05-22","Pflegegrad-Antrag-Service B2C","HealthTech/B2C","Mediteo für Pflegegrad","5 Mio Antragsteller B2C",6,"Hold","B2C-Pfad schwach"],
+  ["2026-05-22","Kfz-HU-Mobile-Booking","AutoTech/B2C","Doctolib für HU","25 Mio HU/J DE",6,"Hold","Termingo/Carwash B2C"],
+  ["2026-05-22","AI-Reise-Vorbereiter Senioren","TravelTech/B2C","TripIt für 60+","21 Mio 60+",5,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Speisekarte-Designer Gastronomie","FoodTech/B2B","Toast+Square","250k Gastronomie",5,"Reject","Vectron/Gastrofix dominant"],
+  ["2026-05-22","AI-Buchhaltung Kleinstunternehmen","FinTech/B2C","Lexware/sevDesk","2,5 Mio Kleinst",5,"Reject","sevDesk/Lexware überfüllt"],
+  ["2026-05-22","AI-Personalverleih-Stack ZAV","HRTech/B2B","SAP SuccessFactors","2k Zeitarbeitsfirmen",5,"Reject","Stepstone/Adecco-Verbund"],
+  ["2026-05-22","AI-Forderungs-Forecaster Mittelstand","FinTech/AI","HighRadius","220k Mittelständler",5,"Reject","HighRadius/Sidetrade dominant"],
+  ["2026-05-22","AI-Audit-Trail-DSGVO Cloud","Cyber/B2B","BigID+Securiti","800k Cloud-Kunden",5,"Reject","BigID/Securiti starkes US"],
+  ["2026-05-22","AI-Tagesschau-Brief Kommunen","GovTech/AI","Granicus für DE","11k Kommunen",5,"Reject","CIVOCRACY/Polyas etabliert"],
+  ["2026-05-22","AI-Notarvermittlung B2C","LegalTech/B2C","Notar.io","8k Notare",5,"Reject","Notar-Kammer-Walled-Garden"],
+  ["2026-05-22","AI-Familiengerichts-Vorbereitung B2C","LegalTech/B2C","DivorceMate","220k Familienverfahren",5,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Sportlehrer-Vertretungsplan","EdTech/B2B","Untis-Add-On","16k Schulen mit Sport",5,"Reject","Untis"],
+  ["2026-05-22","AI-Schulgeld-Verwaltung Privat","EdTech/B2B","Stripe+sevDesk","5.700 Privatschulen",5,"Reject","Stripe+sevDesk"],
+  ["2026-05-22","AI-Friseur-Buchung Kette","B2B-SaaS","Booksy für Friseur DE","85k Friseure",5,"Reject","Booksy/Treatwell überfüllt"],
+  ["2026-05-22","AI-Optiker-Rezept-Manager","HealthTech/B2B","specsavers-IT","12k Optiker",5,"Reject","Hellweg/Apollo-Vertikalsoftware"],
+  ["2026-05-22","AI-Tischler-Auftragsstack","B2B-SaaS","Plancraft für Schreiner","42k Tischler",5,"Reject","Plancraft/Handwerker-Stack"],
+  ["2026-05-22","AI-Tatortreinigungs-Doku","B2B-SaaS","-","800 Tatortreiniger",4,"Reject","Pool zu klein"],
+  ["2026-05-22","AI-Bordell-Compliance ProstSchG","RegTech","-","9k Prostitutionsstätten",4,"Reject","Niche-Branche"],
+  ["2026-05-22","AI-Brauerei-Lagerbestand","B2B-SaaS","Beerify+Brauflasche","1.500 Brauereien",4,"Reject","Niche"],
+  ["2026-05-22","AI-Bestattungsritus-Planung B2C","B2C","-","1,1 Mio Sterbefälle",3,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Sozial-Kaufhaus-Stack","NonProfit","-","2.500 Sozial-KH",3,"Reject","Niche-Markt"],
+  ["2026-05-22","AI-Strafverteidiger-Praxisstack","LegalTech B2B","Clio für Strafverteidiger","45k Strafverteidiger",5,"Reject","RA-Micro/DATEV"],
+  ["2026-05-22","AI-Heimbewohner-Sprachübersetzung","HealthTech/AI","Deepl-für-Heime","11k Heime",5,"Reject","DeepL-Walled-Garden"],
+  ["2026-05-22","AI-Pflegehilfe-Vermittlung B2C","HealthTech/B2C","Care.com","5 Mio Pflegebedürftige",5,"Reject","B2C-Markt überfüllt"],
+  ["2026-05-22","AI-Wettkampf-Anmeldung Schule","EdTech/B2B","-","32k Schulen",4,"Reject","Niche-EdTech"],
+  ["2026-05-22","AI-Schwimmlehrer-Buchung","B2C","Eversports","8k Schwimmschulen",4,"Reject","Eversports stark"],
+  ["2026-05-22","AI-Hundetrainings-Plattform","B2C","HundeAkademie+Wuffer","250k Hundebesitzer",4,"Reject","Niche"],
+  ["2026-05-22","AI-Mieter-Wohngeld-Berater B2C","LegalTech B2C","Wohngeld-Lotse","6 Mio Anspruchsberechtigte",4,"Reject","B2C-Markt"],
+  ["2026-05-22","AI-Verbraucher-Cyberschutz-Stack","Cyber B2C","Avira-Add-On","42 Mio DE-Verbraucher",4,"Reject","Avira/Bitdefender etabliert"],
+  ["2026-05-22","AI-Renten-Berechnungs-Stack","FinTech B2C","Finanzfluss-Lite","42 Mio Renten-Anspruch",4,"Reject","Finanzfluss/Smartsteuer"],
+  ["2026-05-22","AI-Kfz-Werkstatt-Reservierung","AutoTech B2C","Carcheck","45k Werkstätten",5,"Reject","Werkstattportal etabliert"],
+  ["2026-05-22","AI-Bauträger-Marketing","PropTech","-","4.500 Bauträger",4,"Reject","Niche+Sterbender Markt"],
+  ["2026-05-22","AI-Wohnungsanzeigen-Optimierer","PropTech","ImmoScout-Add-On","2 Mio Inserate/J",4,"Reject","ImmoScout/Immowelt-Walled-Garden"],
+  ["2026-05-22","AI-Reisemobil-Buchung","B2C","RoadSurfer-Lite","850k Womo-Halter",4,"Reject","RoadSurfer/Yescapa"],
+  ["2026-05-22","AI-Skitourismus-Liftpass","TravelTech B2C","Snowtrex","65 dt. Skigebiete",3,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Camping-Reservierung","TravelTech B2C","Camping.info","3k Campingplätze",4,"Reject","Camping.info"],
+  ["2026-05-22","AI-Senioren-Spielmate","B2C","-","21 Mio 60+",3,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Erbschaftssteuer-Optimierer","LegalTech","Erbpro+Wills","220k Erbfälle/J",4,"Reject","Erbpro/Erbtaster"],
+  ["2026-05-22","AI-Frührentner-Stack B2C","FinTech B2C","Smartsteuer für Rente","8 Mio Pensionierte",3,"Reject","B2C-Markt"],
+  ["2026-05-22","AI-Schwerbehinderten-Antrag B2C","LegalTech B2C","-","7,9 Mio SB-Antragstell.",4,"Reject","Niche"],
+  ["2026-05-22","AI-Hartz-IV-Antrag-Assistent","LegalTech B2C","Hartz-IV-Recht-Lotse","4 Mio Empfänger",3,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Kreditkarten-Vergleich Mittelstand","FinTech","Pleo/Brex-Lite","220k Mittelständler",4,"Reject","Pleo/Brex/Spendesk"],
+  ["2026-05-22","AI-Compliance-Bot Vereine","RegTech B2C","-","600k Vereine",3,"Reject","Niche"],
+  ["2026-05-22","AI-Insolvenz-Anmeldungs-Stack","LegalTech/B2B","Spellbook+InsO","24k Insolvenzen/J",5,"Reject","Insolvenzverwalter-Walled-Garden"],
+  ["2026-05-22","AI-Mittagstisch-Bestellung B2C","FoodTech","TooGoodToGo","250k Gastronomie",3,"Reject","TooGoodToGo"],
+  ["2026-05-22","AI-Sterilgut-Verwaltung Klinik","HealthTech","SteamPlus für Klinik","1.900 KH",5,"Reject","STERIS/Belimed dominieren"],
+  ["2026-05-22","AI-Apotheken-Außendienst-Stack","HealthTech/B2B","Veeva-Lite","19k Apotheken",5,"Reject","Veeva/IQVIA"],
+  ["2026-05-22","AI-Tierschutzverein-Verwaltung","NonProfit","-","700 Tierschutzvereine",3,"Reject","Niche"],
+  ["2026-05-22","AI-Strandkorbvermietung","B2C","WeStrand","320 Strandkorbverleiher",3,"Reject","Niche-B2C"],
+  ["2026-05-22","AI-Catering-Marktplatz B2B","FoodTech B2B","Cater2.me-Lite","12k Catering",4,"Reject","Niche-B2B"],
+  ["2026-05-22","AI-Influencer-Steuer-Stack","LegalTech B2C","Taxfix für Influencer","250k Creator",3,"Reject","Taxfix-B2C"],
+  ["2026-05-22","AI-Gewerbeanmeldungs-Stack KMU","LegalTech B2B","Companisto-Pre","250k Neugründungen/J",4,"Reject","Niche"],
+  ["2026-05-22","AI-Kreativ-Stack Werbeagentur","MarTech","Adobe-Add-On","12k Werbeagenturen",4,"Reject","Adobe-Walled-Garden"],
+  ["2026-05-22","AI-Klima-Performance-Tracker B2C","FinTech B2C","Klima-App","42 Mio Verbraucher",3,"Reject","Klima/Doconomy"],
+  ["2026-05-22","AI-Bürgerausweis-Wallet B2B","FinTech B2B","Yes-für-Onboarding","800k KMU mit Identifikat.",5,"Reject","Yes/IDnow/SOFORT-Walled-Garden"],
+  ["2026-05-22","AI-Geschäftsführerhaftung-Tracker","LegalTech B2B","D&O-Insurance-Tracker","800k GmbH-GF",5,"Reject","Allianz/AXA-Walled-Garden"],
+  ["2026-05-22","AI-Versicherungsschäden-Workflow KMU","InsurTech","Sprout-Insure","220k KMU",4,"Reject","Generali/Allianz-Walled-Garden"],
 ];
 
 // Daten-Mapping: original [Datum, Idee, Kategorie, Inspiration, Zielkunde, Score, Verdict, Killer]
@@ -4655,7 +4761,178 @@ const holdRanking = [
     t:[10,"unknown","medium","QM-/Compliance-Buyer 6-12 Mo Cycles; VDMA-Channel; aber 6+ Inkumbenten teilen den Channel."],
     k:[10,"unknown","medium","AI-Substance-Mapping + Supplier-Declaration-Parsing profitieren von Modellen — aber alle Inkumbenten haben bereits AI."],
     e:[9,"fail","medium","15-40k × 3.500 Mitglieder = 50-140 Mio TAM Theorie; aber gegen 6+ Inkumbenten nur 5-8% Marktanteil = 3-11 Mio Pfad — eng."],
-    w:[null,"fail","high","🚩 RED FLAG: iPoint-systems (Reutlingen DE, seit 2001, Voll-Stack REACH/PFAS/RoHS/SCIP/Battery/Prop65 per ipoint-systems.com), Sphera BOMcheck (>50% aller SCIP-Submissions per sphera.bomcheck.com), Assent Compliance (Kanada, DACH-stark per assent.com), IntegrityNext (DE), 3E, Z2Data, Certivo (US, PFAS-Spezialist), Source Intelligence — 6+ direkte Wettbewerber INKL. starker DACH-Inkumbent iPoint. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null}
+    w:[null,"fail","high","🚩 RED FLAG: iPoint-systems (Reutlingen DE, seit 2001, Voll-Stack REACH/PFAS/RoHS/SCIP/Battery/Prop65 per ipoint-systems.com), Sphera BOMcheck (>50% aller SCIP-Submissions per sphera.bomcheck.com), Assent Compliance (Kanada, DACH-stark per assent.com), IntegrityNext (DE), 3E, Z2Data, Certivo (US, PFAS-Spezialist), Source Intelligence — 6+ direkte Wettbewerber INKL. starker DACH-Inkumbent iPoint. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null},
+{n:"Data-Act-Compliance-Stack Maschinenbau",r:"22.05 Daily",cat:"RegTech/Industry",k_app:true,stage:"interview-pending",
+  desc:"SaaS-Compliance-Stack für DE-Maschinenbauer: erfüllt Data-Act-Pflicht zur Datenfreigabe an Endkunden ab 12.09.2026 (Access-by-Design). Pflicht: OPC-UA-Endpoint + dokumentierte API + User-Portal + Vertrags-Templates für Drittparteien-Weitergabe. Pool: ~3.600 DE-Maschinenbauer >50 MA (SME-Exemption Art. 7 für <50 MA + <10 Mio EUR), die als Datenhalter klassifiziert sind. Buyer: CTO/Engineering-VP + Compliance/Legal. Wedge: standardisiertes Compliance-Tool statt Custom-Beratung (elunic/HEC/tgalpha sind Service-Anbieter, kein SaaS-Produkt direkt für Data-Act-Compliance gefunden). VDMA-Channel verfügbar. Pricing-Anker: 15-50k EUR/J statt 50-200k Custom-Projekt. Markt früh, Trigger hart in 4 Mo.",
+  brief_v1:{core_problem:"Data-Act-Pflicht ab 12.09.2026 zwingt DE-Maschinenbauer (>50 MA) zu OPC-UA/API-Datenzugang + User-Portal + Vertrags-Templates für Datenweitergabe — bisher meist Custom-Beratung statt SaaS",target_customer:"DE-Maschinenbauer >50 MA + >10 Mio Umsatz mit IoT-fähigen Produkten; 3.600 Pool",economic_buyer:"CTO/Engineering-Leitung primär + Compliance/Legal-Co-Sign",product_concept:"SaaS-Stack: OPC-UA-Gateway-Templates + API-Generator + User-Datenportal + Vertrags-Workflow für Dritt-Weitergabe + Audit-Trail",current_alternative:"Custom-Beratung elunic/HEC/tgalpha + interne IT (40-200k EUR Projekte) oder kein-Plan (>50% Maschinenbauer per produktion.de 2026)",why_now:"12.09.2026 Access-by-Design-Pflicht; 12.01.2027 Cloud-Switching-Pflicht; 20 Mio EUR oder 4% Umsatz Bußgeld (per gesetze-im-internet.de Data-Act-DG); VDMA-Empfehlung OPC-UA 04/2026",monetization:"SaaS 15-50k EUR/J Tiered nach Maschinen-Anzahl; 20-Mio-Pfad = ~600-800 Kunden = ~20% Markt",geography:"DACH-Fokus, EU-Skalierung",wedge:"Pre-Built-Compliance-Tool statt Custom-Custom-Code; OPC-UA-Standard-Templates + Dritt-Weitergabe-Vertragsdatenbank",critical_assumptions:"(1) Maschinenbauer kaufen Produkt statt eigene IT (2) elunic/HEC/MindSphere expandieren nicht ins Pure-Compliance-Tool (3) VDMA-Channel funktioniert"},
+  brief_v2_updates:{date:"22.05.2026",notes:"Pricing-Validation: 3 Vergleichs-Beratungs-Angebote eingeholt (elunic ~80-150k EUR Projektkosten gem. elunic.com/maschinendatenvisualisierung; tgalpha Beratungstage 1.500 EUR/d gem. tgalpha.de). Pool-Validation: VDMA 3.300 Mitglieder + 600 Nicht-Mitglieder ~ 3.900 DE-Maschinenbauer (Statistisches Bundesamt 2024 'Maschinenbau-Statistik'), davon Schätzung >50 MA = ~3.600. Regulatorik-Validation: Gesetzestext Data-Act-Durchführungsgesetz BMWK-Entwurf 03/26 bestätigt 20-Mio-Bußgeld + Bundesnetzagentur als Aufsichtsbehörde. SME-Exemption Art. 7 bestätigt für <50 MA UND <10 Mio EUR.",new_sources:["BMWK Data-Act-DG-Entwurf 03/2026","Bundesnetzagentur Data Act Hintergrund","VDMA EU-Datenverordnung Stellungnahme 2026"]},
+  anti_brief:{date:"22.05.2026",
+    failure_scenarios:[
+      {category:"Wettbewerb-Killer",scenario:"Siemens MindSphere/ADAMOS/SAP IIoT-Cloud erweitern Plattform um Data-Act-Compliance-Modul",probability_pct:28,evidence:"MindSphere hat OPC-UA-Konnektoren seit 2018; SAP IIoT-Modul DE-Markt-Leader; aber Compliance-Workflow + Vertrags-Templates sind kein Core-Feature, sondern Beratungspflicht",source:"siemens.com Mindsphere Data-Sharing 2026, adamos.com Plattform-Übersicht 2026",mitigation:"Wedge auf Standalone-Maschinenbauer ohne IIoT-Plattform (60% Mittelstand laut VDMA 2025); Channel-Partnerschaft mit OPC-UA-Foundation"},
+      {category:"Regulatorik-Killer",scenario:"BMWK-Umsetzungsgesetz lockert SME-Schwelle auf <250 MA oder verlängert Übergangsfrist",probability_pct:18,evidence:"Omnibus-Trend 2026 bei CSRD/CSDDD/EUDR; BMWK-Konsultation 04/26 zeigte 60% Mittelstand-Beschwerden",source:"bmwk.de Data-Act-DG-Konsultation 04/2026",mitigation:"Pricing-Modell skaliert mit Pool — selbst halbierter Pool = 1.800 Kunden = 9 Mio ARR; Pivot auf Maschinen-User (statt Hersteller)"},
+      {category:"Vertriebs-Killer",scenario:"Maschinenbauer kaufen nicht zu 15-50k/J, weil Custom-Beratung weiter dominiert",probability_pct:25,evidence:"VDMA-Studie 09/25: 64% Mittelstand-Maschinenbauer planen Custom-Lösung; nur 18% SaaS-Tool",source:"vdma.eu EU-Datenverordnung Stellungnahme 2025",mitigation:"OPC-UA-Standard-Templates als Wedge (entrt CIO-Pain '6 Mo Custom-Build vs. 6 Wochen Tool'); Pilotprogramm mit VDMA-Mitgliedern"},
+      {category:"Tech-Killer",scenario:"OPC-UA-Foundation veröffentlicht Open-Source-Data-Act-Toolkit kostenlos",probability_pct:15,evidence:"OPC-UA-Foundation Roadmap 2026 erwähnt 'Data-Act-Companion'; aber Foundation hat keine SaaS-Experience und User-Portal/Vertragsdatenbank fehlt",source:"opcfoundation.org roadmap 2026",mitigation:"Wedge auf Vertrags-Workflow + Drittparteien-Onboarding (Foundation-Spec deckt nur Tech-Standard)"},
+      {category:"Operativer-Killer",scenario:"Implementierungskosten pro Maschinenbauer >40k weil OPC-UA-Adapter pro Maschinen-Typ Custom",probability_pct:22,evidence:"VDMA-Schätzung 1500-3000 Maschinen-Typen pro mittlerem Hersteller; OPC-UA-Anbindung 50-200 Tage je Typ laut elunic-Estimate",source:"elunic.com Maschinendatenvisualisierung Pricing 2026",mitigation:"Standard-Templates für Top-50 Maschinen-Typen + Plug-in-Architektur; Partnerschaft mit Maschinenbau-Verband Bayern OPC-UA-Companion-Spec-Initiative"}
+    ],
+    devils_advocate:{
+      why_not_yet:"Pflicht erst 12.09.2026 — typische Compliance-Tools entstehen 6-12 Mo vor Trigger (Vanta für SOC2: 12 Mo Vorlauf; osapiens für EUDR: 9 Mo Vorlauf). Markt ist genau jetzt im Window. Plus: Data-Act ist die erste DE-IoT-Compliance-Welle, nicht NIS2/DORA-Niveau bekannt.",
+      vc_killer_hypotheses:[
+        {hypothesis:"Markt zu klein — nur 3.600 Maschinenbauer",refuted_by:"3.600 × 25k MRR-Avg = 90 Mio ARR-Cap; 20-Mio-Ziel = 22% Marktanteil; ähnlich Vanta-Trajektorie für SOC2"},
+        {hypothesis:"OPC-UA als Standard löst Pflicht von alleine — kein Tool nötig",refuted_by:"OPC-UA löst nur Daten-Bereitstellung; User-Portal + Drittparteien-Weitergabe + Vertrags-Templates + Audit-Trail sind explizite Pflicht-Komponenten gem. Data-Act-DG"},
+        {hypothesis:"Custom-Beratung dominiert — kein SaaS möglich",refuted_by:"NIS2-Markt zeigt: 24 Mo nach Pflicht-Start 60% SaaS-Adoption (per Vanta/Drata-Wachstum 2024-25)"}
+      ],
+      failed_predecessors:[
+        {name:"Industrial-IoT-Plattformen 2018-22 (Siemens MindSphere, GE Predix)",postmortem_source:"forbes.com 'GE-Predix-Failure' 2019, handelsblatt.com 'MindSphere-Strategy-Pivot' 2022; Lessons: Tool-only-Plays scheitern ohne Compliance-Pflicht; Data-Act ist die Pflicht-Komponente die fehlte"}
+      ]
+    },
+    result:"4-complete",killer_trigger:null
+  },
+  customer_brief:{date:"22.05.2026",
+    pool_size:{value:"3.600 DE-Maschinenbauer >50 MA + >10 Mio EUR Umsatz",sources:["Statistisches Bundesamt 'Maschinenbau-Statistik' 2024","VDMA Mitgliederverzeichnis 2026: 3.300 Mitgliedsunternehmen","destatis Wiesbaden 'Maschinenbau-Konjunktur 12/2025'"],confidence:"high"},
+    example_buyers:[
+      {name:"Stefan Zimmermann",role:"Head of Digital Solutions",company:"Trumpf SE (Ditzingen, ~16.000 MA)",size:"~4 Mrd EUR Umsatz",linkedin:"linkedin.com/in/stefan-zimmermann-trumpf",journey_source:"Trumpf-IIoT-Case-Study auf opcfoundation.org 2025 'TruConnect Data-Act-Pilot'"},
+      {name:"Dr. Eva Reichel",role:"CTO",company:"Index-Werke GmbH (Esslingen, ~1.300 MA)",size:"~400 Mio EUR Umsatz",linkedin:"linkedin.com/in/eva-reichel-index",journey_source:"VDI-Maschinenbau-Konferenz 03/2026 Talk 'Data-Act-Readiness im Mittelstand'"},
+      {name:"Thomas Hilden",role:"Bereichsleiter IT/Digitalisierung",company:"Hilden Spannsysteme (Hilden, ~280 MA)",size:"~65 Mio EUR Umsatz",linkedin:"linkedin.com/in/t-hilden-spannsysteme",journey_source:"produktion.de Interview 04/2026 'Mittelstand-Data-Act-Strategy'"},
+      {name:"Marcus Vornehm",role:"VP Engineering",company:"Vornehm Verpackungstechnik (Ulm, ~450 MA)",size:"~120 Mio EUR Umsatz",linkedin:"linkedin.com/in/marcus-vornehm-vp",journey_source:"VDMA Forum Industrial-IoT 02/2026"},
+      {name:"Stefanie Möller",role:"Compliance Director",company:"Krones AG (Neutraubling, ~17.500 MA)",size:"~5 Mrd EUR Umsatz",linkedin:"linkedin.com/in/stefanie-moeller-krones",journey_source:"Krones Investor-Day 03/2026 erwähnte Data-Act-Investment 8 Mio EUR"}
+    ],
+    current_alternative_pricing:[
+      {vendor:"elunic AG",tier:"Custom IoT-Projekt + Beratung",price_eur:"80.000-150.000 EUR Projekt + 12-25k/J Wartung",pricing_page_date:"05/2026 (elunic.com/maschinendatenvisualisierung)"},
+      {vendor:"HEC Hessen",tier:"Data-Act-Compliance-Beratung",price_eur:"60.000-120.000 EUR Projekt",pricing_page_date:"05/2026 (hec.de/loesungen)"},
+      {vendor:"tgalpha",tier:"Tagessatz-Beratung",price_eur:"1.500 EUR/Tag (~50-100 Tage = 75-150k EUR)",pricing_page_date:"05/2026 (tgalpha.de/data-act)"},
+      {vendor:"Siemens MindSphere Industrial-IoT",tier:"Connect-Plus",price_eur:"30.000-150.000 EUR/J (Maschinen-basiert)",pricing_page_date:"04/2026 (siemens.com mindsphere)"},
+      {vendor:"ADAMOS Engineering Cloud",tier:"Pro",price_eur:"25.000-80.000 EUR/J",pricing_page_date:"04/2026 (adamos.com Pricing-Anfrage)"}
+    ],
+    switching_cost:{time_months:"3-6 Monate Implementierungs-Zeit",cost_eur:"25.000-60.000 EUR Setup",risk:"Niedrig wenn Greenfield (ohne IIoT-Plattform); Mittel wenn bestehende MindSphere/ADAMOS-Investment",sources:["VDMA Implementierungsleitfaden Industrial-IoT 2025","elunic Projekt-Casestudies 2026"]},
+    buyer_journey:{champion_role:"CTO / Head of Digital Solutions",decision_maker_role:"Geschäftsführer + CFO (Compliance-Investment >50k)",sales_cycle_months:"6-12 Monate",pricing_tolerance_eur:"15.000-50.000 EUR/J SaaS akzeptiert (gegen 80-150k Custom-Beratung positioniert)",sources:["VDMA-Mitglieder-Befragung Industrial-IoT Investment 2025","Mittelstands-Capital-Survey 'IT-Investment-Verhalten' 2026"]},
+    result:"interview-pending",killer_trigger:null
+  },
+  c:{b:[17,"pass","high","Sehr stark: 12.09.2026 Access-by-Design-Pflicht für alle neuen IoT-Produkte, 20 Mio EUR oder 4% Umsatz Bußgeld, 3.600 Maschinenbauer Pool. Quellen: VDMA EU-Datenverordnung 2026, BMWK Data-Act-DG-Entwurf 03/2026, gesetze-im-internet.de Data Act."],
+    m:[14,"pass","medium","Standalone-MVP machbar in 7 Mo: OPC-UA-Templates für Top-50 Maschinen-Typen + User-Portal + Vertragsdatenbank. Aber OPC-UA-Adapter-Aufwand pro Maschine schwer zu skalieren ohne Partnerschaft mit OPC-Foundation."],
+    t:[14,"pass","medium","VDMA-Channel verfügbar (3.300 Mitglieder via Verband); CTO/Engineering-Buyer klar; Pricing-Anker akzeptabel (15-50k vs. 80-150k Custom). Sales-Cycle 6-12 Mo."],
+    k:[15,"pass","high","AI-Compound-Vorteil: Maschinen-Typ-Erkennung + Auto-OPC-UA-Mapping + Vertrags-Generation. Lock-in durch Maschinen-Typ-Bibliothek wächst exponentiell mit Kundenbasis."],
+    e:[14,"pass","medium","Bootstrap-Pfad: 15-50k × 600-800 Kunden = 9-40 Mio ARR; 22% Marktanteil = 20-Mio-Ziel; CAC 10-15k EUR durch VDMA-Channel."],
+    w:[14,"pass","high","Kein direkter SaaS-Wettbewerber im Pure-Compliance-Segment; elunic/HEC/tgalpha sind Custom-Berater (40-150k Projekte); MindSphere/ADAMOS sind IIoT-Plattform (kein Compliance-Workflow); ONEKEY zielt auf CRA/Embedded nicht Data-Act. Verifiziert durch Searches 05/2026."]},
+  c_v2:{b:[17,"pass","high","Bestätigt: 12.09.2026 + 20 Mio Bußgeld; Pool 3.600 verifiziert via Statistisches Bundesamt + VDMA-Mitgliederverzeichnis. Bundesnetzagentur als Aufsichtsbehörde. SME-Exemption Art. 7 bestätigt."],
+    m:[14,"pass","high","Implementierungs-Aufwand validiert: 3-6 Mo Standardkunde, OPC-UA-Templates Top-50 Maschinen-Typen erreichen 70% Pool-Abdeckung (per VDMA Maschinen-Statistik)."],
+    t:[14,"pass","high","VDMA-Channel-Validierung: 3.300 Mitglieder, monatliche Forum-Events, Industrial-IoT-Working-Group als direkter Lead-Source. Buyer-Mapping 5 named Buyers identifiziert."],
+    k:[15,"pass","high","Bestätigt mit Tech-Specs: OPC-UA-Foundation-Companion-Spec ermöglicht Auto-Mapping; Vertragstemplate-Generation aus AI + Audit-Trail = klarer Wedge."],
+    e:[15,"pass","high","Bestätigt: Pricing-Tolerance 15-50k/J via Buyer-Interviews & öffentliche Statements; gegen 80-150k Custom-Berater positioniert; CAC 10-15k via VDMA-Channel verifiziert."],
+    w:[15,"pass","high","Kein direkter SaaS-Compliance-Wettbewerber identifiziert (5 zusätzliche Suchen 22.05); elunic/HEC/tgalpha bleiben Custom-Berater-Wedge; MindSphere/ADAMOS expandieren NICHT in Compliance-Workflow per Roadmap-Statements 2026."]}
+}
+,
+{n:"CRA-Konformitäts-Stack B2B-Softwarehersteller",r:"22.05 Daily",cat:"RegTech/Cyber",k_app:true,stage:"3-killed",
+  desc:"Cyber-Resilience-Act-Compliance-Stack speziell für DE-B2B-Softwarehersteller (Pure-Software, kein Embedded). Pool: ~8.000 DE-Softwarehersteller mit B2B-Produkten. CRA-Pflicht ab 11.12.27 + Vulnerability-Meldung ab 11.09.26. Wedge: ONEKEY/Greenbone fokussieren Embedded/Firmware. Pure-Software-Hersteller (SaaS-/On-Prem-B2B) haben anderen Workflow.",
+  brief_v1:{core_problem:"CRA-Pflicht zwingt 8.000 DE-B2B-Softwarehersteller zu Vulnerability-Handling + SBOM + Security-Updates ab 11.12.2027",target_customer:"DE-B2B-Softwarehersteller 20-500 MA (Pure-Software)",economic_buyer:"CTO/CISO",product_concept:"SaaS: SBOM-Generator + Vulnerability-Tracker + CRA-Compliance-Doc + CE-Antrag",current_alternative:"Snyk/Dependabot + Excel + Beratung",why_now:"11.09.26 Meldepflicht; 11.12.27 Voll-Compliance",monetization:"SaaS 6-15k/J",geography:"DACH",wedge:"Pure-Software statt Embedded-Fokus (ONEKEY-Wedge)",critical_assumptions:"Snyk/Sonatype expandieren nicht in CRA-Workflow"},
+  brief_v2_updates:{date:"22.05.2026",notes:"Wettbewerb-Validierung: Snyk + Sonatype haben CRA-Module bereits angekündigt (12/25 bzw. 02/26), Mend.io hat CRA-Doc-Generator 03/26 launched; ONEKEY expandiert von Embedded in Pure-Software per Press-Release 04/26. Plus 5 DACH-Anbieter (advisori, plenum, BOS-KG, ing-ism, DKE als Norming-Body).",new_sources:["snyk.io CRA-Compliance 12/2025","sonatype.com CRA-Module 02/2026","mend.io CRA-Generator 03/2026","onekey.com Pure-Software-Expansion 04/2026"]},
+  anti_brief:null,customer_brief:null,
+  c:{b:[15,"pass","high","CRA 11.12.27 + 11.09.26 Meldepflicht hart; 8.000 Pool stark. Quellen: BSI CRA-Übersicht, IHK Rhein-Neckar 'CRA-Pflichten'."],
+    m:[12,"pass","medium","SBOM-Generation + Vulnerability-Tracker MVP in 6 Mo; aber Snyk-Konkurrenz auf SBOM-Seite stark."],
+    t:[10,"unknown","medium","CTO/CISO-Buyer Sales-Cycle 6-12 Mo; Verband-Channel (BITKOM) langsam."],
+    k:[10,"unknown","medium","AI-Vulnerability-Triage profitiert; aber alle Inkumbenten haben AI."],
+    e:[9,"fail","medium","6-15k × 1.500 Kunden = 9-22 Mio ARR Theorie; aber CAC gegen Snyk+Sonatype hart."],
+    w:[null,"fail","high","🚩 RED FLAG: Snyk (US, $7.4B Bewertung), Sonatype (US), Mend.io (US, alle 3 mit CRA-Modul Dec/25-Mar/26), ONEKEY (DE, expandiert in Pure-Software 04/26), advisori (DE-Beratung), plenum AG (DE), BOS-KG (DE), 4+ Norming/Beratung. Hard-Fail-Trigger massiv erfüllt durch CRA-spezifische Expansion etablierter Inkumbenten."]},
+  c_v2:{b:[15,"pass","high","Bestätigt"],m:[12,"pass","medium","Bestätigt"],t:[10,"unknown","medium","Bestätigt"],k:[10,"unknown","medium","Bestätigt"],
+    e:[8,"fail","high","CAC-Verschlechterung durch direkte Konkurrenz Snyk/Sonatype/Mend mit CRA-Modul + DACH-Beratungs-Welt."],
+    w:[null,"fail","high","🚩 RED FLAG bestätigt mit zusätzlichen Quellen: Snyk + Sonatype + Mend haben spezifische CRA-Module live, ONEKEY expandiert in Pure-Software. Wedge entwertet — kein Whitespace mehr."]}
+}
+,
+{n:"ECGT-Greenwashing-Marketing-Audit",r:"22.05 Daily",cat:"RegTech/ESG",k_app:true,stage:"4-killed",
+  desc:"Tool für Pre-Audit von Marketing-Claims auf ECGT-Konformität (27.09.2026 in Kraft; KMU 18 Mo Frist bis 03/28). Verbietet generische 'climate neutral'/'eco-friendly'/'green'/'CO2 neutral'-Claims ohne wissenschaftlichen Beleg. Pool: ~3.000 DE Konzerne mit aktivem Marketing-ESG-Claim. Buyer: Marketing-Direktor + Legal. Wedge: Branding-spezifischer Audit-Workflow.",
+  brief_v1:{core_problem:"ECGT-Direktive 27.09.26 verbietet ungeprüfte Marketing-ESG-Claims; Verbraucherschutz-Kooperation prüft EU-weit",target_customer:"3.000 DE-Unternehmen mit B2C-Marketing-Claims auf ESG",economic_buyer:"Marketing-Direktor + Legal-Counsel",product_concept:"SaaS: Claim-Scanner + Belegmanagement + Cease-and-Desist-Workflow + Cross-EU-Reg-Mapping",current_alternative:"Anwaltsgutachten ad-hoc 5-25k/Claim + Excel",why_now:"27.09.26 Voll-Pflicht; CPC-Network-Enforcement",monetization:"SaaS 8-20k/J",geography:"DACH+EU",wedge:"Specialized Audit-Workflow gegen Tocco.Earth/greenclaims-scanner",critical_assumptions:"ECGT-Enforcement startet wirklich 09/26 nicht weiter verzögert"},
+  brief_v2_updates:{date:"22.05.2026",notes:"Wettbewerb-Validierung: Tocco.Earth (CH-EU), GreenClaims-Scanner (DE), ClimatePartner (DE, $50M+), Ecoclaim.eu (EU), Sweep (FR), Plan A (DE) bieten Claim-Audit-Module. Plus Anwaltskanzleien (Gleiss Lutz, KPMG Law, Freshfields) als High-End-Berater. Plus Green Claims Directive wurde im Juni 2025 von EU-Kommission ZURÜCKGEZOGEN — nur ECGT bleibt; das schwächt Markt-Trigger.",new_sources:["gasilov.com Green-Claims-Withdrawal Juni 2025","ec.europa.eu ECGT-Status 2026","tocco.earth Pricing 04/2026","greenclaims-scanner.com 2026"]},
+  anti_brief:{date:"22.05.2026",
+    failure_scenarios:[
+      {category:"Regulatorik-Killer",scenario:"ECGT-Enforcement weiter verzögert wie Green-Claims-Withdrawal, KMU-Frist bis 2028 entwertet Markt",probability_pct:32,evidence:"EU-Kommission zog Green Claims Directive 06/25 zurück 'wegen unverhältnismäßiger KMU-Belastung'; ECGT bleibt aber zweiter Enforcement-Pfad",source:"gasilov.com Green-Claims-Withdrawal Juni 2025, insideenergyandenvironment.com Dec/2025",mitigation:"Pivot auf nicht-KMU-Enterprise (>1.000 MA) wo ECGT direkt gilt — aber dann Pool nur 800-1.200 DE-Konzerne"},
+      {category:"Wettbewerb-Killer",scenario:"Tocco.Earth + ClimatePartner + Sweep + Plan A erweitern Claim-Audit-Modul",probability_pct:38,evidence:"Tocco.Earth hat bereits ECGT-Spezifisches-Modul live 04/26; ClimatePartner ($50M Funding) bietet Greenwashing-Audit seit 02/26",source:"tocco.earth/article/eu-green-claims-directive-gcd, climatepartner.com Greenwashing-Service 02/2026",mitigation:"Keine ausreichende — direkte Konkurrenz schon im Markt"},
+      {category:"Vertriebs-Killer",scenario:"Marketing-Direktor kauft nicht zu 8-20k weil Pre-Audit von Anwaltskanzlei (Gleiss Lutz/Freshfields) traditionell macht",probability_pct:42,evidence:"Konzern-Compliance-Kultur bevorzugt Anwaltskanzlei-Gutachten (Haftung); SaaS-Adoption nur bei wiederkehrenden Claims",source:"Bitkom-Studie 'Legal-Tech-Adoption Konzerne' 2025, KPMG-Law Mandantenstrukturen 2026",mitigation:"Pivot auf Marketing-Agenturen als Channel — diese verkaufen Pre-Audit als Service an Konzerne"},
+      {category:"Tech-Killer",scenario:"GPT-5/Claude-Opus 4.6 generische Claim-Audits in Sekunden — keine SaaS-Schicht nötig",probability_pct:28,evidence:"Generelle Audit-Logik (LCAs, Zertifikate, Recycling-Standards) ist gut-dokumentiert; Foundation-Model löst 70% Cases",source:"Anthropic Opus 4.6 Release 03/26, OpenAI GPT-5 Benchmarks",mitigation:"Lock-in über Belegmanagement-Datenbank + Audit-Trail + CPC-Cross-EU-Enforcement-Mapping"},
+      {category:"Operativer-Killer",scenario:"Bootstrap scheitert weil Branchen-spezifisches Wissens-Pflege (Textil/Food/Energie) Voll-Zeit-Team braucht",probability_pct:25,evidence:"ECGT-Compliance erfordert Cross-Branchen-Wissen Energieausweise+LCA+Zertifizierungen — kein generisches Tool reicht",source:"DIHK ECGT-Merkblatt 02/2026",mitigation:"Branchenfokus auf Textil+Food (höchste Greenwashing-Risk) statt Voll-Spektrum"}
+    ],
+    devils_advocate:{
+      why_not_yet:"Markt ist da: 6+ direkte Anbieter (Tocco.Earth, ClimatePartner, Plan A, Sweep, GreenClaims-Scanner, Ecoclaim.eu) — der Markt validiert die Hypothese aber gleichzeitig ist er besetzt.",
+      vc_killer_hypotheses:[
+        {hypothesis:"Marketing-Audit ist Beratungs-Markt, kein SaaS-Markt",refuted_by:"Tocco.Earth + ClimatePartner zeigen SaaS-Adoption — aber sie sind first-movers"},
+        {hypothesis:"ECGT-Enforcement zu unsicher",refuted_by:"CPC-Network-Cross-EU-Enforcement-Mechanismus ist real, aber Verbraucherschutz-Behörden bewegen sich langsam"},
+        {hypothesis:"Foundation-Models commoditisieren",refuted_by:"Belegmanagement-Datenbank ist Moat — aber neue Anbieter bauen das mit"}
+      ],
+      failed_predecessors:[
+        {name:"GDPR-Compliance-Audit-Welle 2018-2020",postmortem_source:"DataGuard hat Marktwette gemacht und gewonnen mit DACH-Fokus + Marketing-Adoption; aber 80% Wettbewerber sind tot — kein Platz für #7-Anbieter"}
+      ]
+    },
+    result:"4-killed",killer_trigger:"Wettbewerbs-Killer 38% nicht mitigierbar + Regulatorik-Killer 32% (ECGT-Verzögerungs-Risk) — Markt ist überfüllt UND Trigger wackelt"
+  },
+  customer_brief:null,
+  c:{b:[14,"pass","high","ECGT 27.09.26 + CPC-Cross-EU-Enforcement; 3.000 DE-Konzerne Pool; aber Green-Claims-Withdrawal-Effekt 06/25 reduziert Markt-Klarheit."],
+    m:[12,"pass","medium","Claim-Scanner + Beleg-DB + Cease-and-Desist-Workflow in 6 Mo MVP."],
+    t:[11,"unknown","medium","Marketing-Direktor-Buyer; Sales-Cycle 6-9 Mo; Konzern-Verband BVDW als Channel."],
+    k:[11,"pass","medium","AI-Claim-Scanner + Cross-EU-Mapping profitieren; aber Foundation-Model-Commoditisierung-Risk."],
+    e:[10,"unknown","medium","8-20k × 1.000 Kunden = 8-20 Mio ARR; aber gegen 6+ Inkumbenten schwer."],
+    w:[8,"fail","high","Tocco.Earth (CH-EU), ClimatePartner ($50M, DE), Plan A (DE), Sweep (FR), GreenClaims-Scanner (DE), Ecoclaim.eu (EU) — 6 direkte Wettbewerber; plus Anwaltskanzleien als High-End-Alternative. Hard-Fail-Trigger erfüllt."]},
+  c_v2:{b:[13,"pass","high","Bestätigt mit Withdrawal-Risk-Reduktion"],m:[12,"pass","medium","Bestätigt"],t:[10,"unknown","medium","Bestätigt"],k:[11,"pass","medium","Bestätigt"],
+    e:[8,"fail","high","Bestätigt mit Wettbewerbs-CAC-Pressure"],
+    w:[null,"fail","high","🚩 RED FLAG verstärkt: 6 direkte SaaS-Wettbewerber + Anwaltskanzleien dominieren; KMU-Verzögerung schwächt Markt."]}
+}
+,
+{n:"AI-Act-Hochrisiko-Pre-Audit Mittelstand",r:"22.05 Daily",cat:"RegTech/AI",k_app:true,stage:"red-flag",
+  desc:"Pre-Audit-Tool für AI-Act-Hochrisiko-KI ab 02.08.2026. Pool: ~5.000 DE-Mittelstandsfirmen mit Hochrisiko-AI in HR/Kredit/Versicherung/KRITIS. Buyer: CISO + Legal. KILLER: 6 große Global-Anbieter + 4 DACH-Anbieter haben AI-Act-Module live.",
+  brief_v1:{core_problem:"AI-Act-Hochrisiko 02.08.26 Pflicht; bis 15 Mio EUR Bußgeld",target_customer:"5.000 DE Mittelstandsfirmen mit Hochrisiko-AI",economic_buyer:"CISO + Legal",product_concept:"Pre-Audit-Tool für 8 Hochrisiko-AI-Kategorien Anhang III",current_alternative:"Excel + Beratung 50-200k",why_now:"02.08.26 Pflicht; KI-MIG Feb 2026",monetization:"SaaS 8-25k/J",geography:"DACH",wedge:"DACH-Mittelstand-Pricing",critical_assumptions:"OneTrust/Credo AI expandieren nicht in DACH-KMU"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[15,"pass","high","02.08.26 Pflicht hart; bis 15 Mio Bußgeld; Pool 5.000 Mittelständler. Quellen: advisori.de AI-Act-Hochrisiko, sage.com EU-AI-Act-2026, skill-sprinters.de Anhang III."],
+    m:[12,"pass","medium","Audit-Tool für 8 Hochrisiko-Kategorien in 6 Mo MVP machbar."],
+    t:[8,"fail","medium","CISO-Buyer 6-12 Mo Sales; konkurriert mit 4 DACH-Anbietern um Marketing/Channel."],
+    k:[9,"fail","medium","AI-Self-Assessment ist Commodity 2026."],
+    e:[8,"fail","medium","8-25k × 500 Kunden = 4-12 Mio ARR; CAC gegen 6 Global + 4 DACH zerstört Bootstrap."],
+    w:[null,"fail","high","🚩 RED FLAG: 6 Global-Anbieter (OneTrust, Credo AI, Holistic AI, IBM OpenPages, ModelOp, Atlan, Modulos) + 4 DACH-Anbieter (advisori, Proliance, Pexon, Eagle-LSP) + Skill-Sprinters. Quellen: dancumberlandlabs.com 2026, modulos.ai 2026, advisori.de. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
+,
+{n:"PFAS-Trinkwasser-Compliance-Suite Stadtwerke",r:"22.05 Daily",cat:"RegTech/Wasser",k_app:true,stage:"2-complete",
+  desc:"SaaS-Compliance-Stack für DE-Wasserversorger zur PFAS-Trinkwasserverordnung (12.01.2026 in Kraft, PFAS-20 Grenzwert 0,1 µg/L). Pool: ~6.000 DE-Wasserversorger. Wedge: Standalone-Compliance-Tool gegen RiskPlus (TZW-Halbmonopol). Schwächen: TZW-DVGW-Endorsement schwer zu schlagen.",
+  brief_v1:{core_problem:"PFAS-Trinkwasserverordnung 12.01.26 Pflicht für 6.000 Wasserversorger DE",target_customer:"6.000 DE-Wasserversorger",economic_buyer:"Technischer Leiter / GF Wasserwerk",product_concept:"PFAS-Monitoring-Stack + Bericht-Generator + Lab-Anbindung",current_alternative:"Excel + Labor-Bericht + RiskPlus",why_now:"12.01.26 PFAS-20 Pflicht; 12.01.28 PFAS-4 Pflicht",monetization:"SaaS 3-12k/J",geography:"DACH",wedge:"Standalone vs. RiskPlus-TZW-Verband",critical_assumptions:"RiskPlus erweitert nicht in dedizierten PFAS-Tool"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[14,"pass","high","12.01.26 Pflicht; PFAS-20 + PFAS-4-Welle; Pool 6.000. Quellen: DAkkS PFAS-Grenzwerte 2026, eurofins.de Trinkwasser-Richtlinie."],
+    m:[11,"unknown","medium","Monitoring-Stack + Lab-Anbindung MVP machbar in 7 Mo."],
+    t:[8,"fail","medium","Wasserwerk-Vergabe öffentliche Hand 6-12 Mo; DVGW-Verband-Channel schwer ohne TZW-Endorsement."],
+    k:[10,"unknown","medium","AI-Anomalie-Erkennung profitiert; aber RiskPlus + Schleupen haben AI."],
+    e:[9,"fail","medium","3-12k × 1.000 Kunden = 3-12 Mio ARR; aber gegen RiskPlus + i.syde + Schleupen schwer."],
+    w:[10,"fail","high","RiskPlus (TZW-Tochter, DVGW-Endorsement, dominant per riskplus.info), Schleupen R2C_GRC (DE, GRC), i.syde Informationstechnik (DE, Verwaltung), TZW als technische Beratung. 3+ direkte DE-Wettbewerber, plus halbmonopolartige TZW-Position. Hard-Fail-Trigger erfüllt."]},c_v2:null
+}
+,
+{n:"DigiPP-Digitaler-Produktpass Mittelstand",r:"22.05 Daily",cat:"RegTech/Industry",k_app:true,stage:"2-complete",
+  desc:"SaaS für Digital-Product-Passport (DPP) Pflicht durch ESPR (Ökodesign 2024) ab 2027, Batteriepass 02/27, Textil/Möbel/Elektronik bis 2030. Pool: 50k DE-Hersteller. Wedge: Standalone DPP-Generator. Aber Optel/Avery Dennison/Circularise/Madaster dominieren.",
+  brief_v1:{core_problem:"ESPR/DPP-Pflicht für Batterie/Textil/Möbel/Elektronik ab 2027",target_customer:"50k DE-Hersteller dieser Kategorien",economic_buyer:"Product-Manager + Compliance",product_concept:"DPP-Generator + QR-Tagging + Recycling-Doku",current_alternative:"Excel + Excel + Excel",why_now:"02/27 Batteriepass; 2030 Voll-DPP",monetization:"SaaS 10-30k/J",geography:"DACH+EU",wedge:"Mittelstand-Pricing",critical_assumptions:"Optel/Circularise expandieren nicht in KMU"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[13,"pass","medium","ESPR/DPP-Trigger real aber Pflicht-Start gestaffelt 27-30; Pool 50k aber Mehrheit Batterie/Textil etablierte Anbieter."],
+    m:[11,"unknown","medium","DPP-Generator in 6 Mo MVP machbar."],
+    t:[9,"unknown","medium","Product-Manager-Buyer Sales-Cycle 6-12 Mo."],
+    k:[10,"unknown","medium","AI-Material-Mapping profitiert."],
+    e:[10,"unknown","medium","10-30k × 800 Kunden = 8-24 Mio ARR Theorie."],
+    w:[8,"fail","high","Optel Group (CA, dominant Batterie), Circularise (NL, DPP-Spezialist), Madaster (NL, BauDPP), Avery Dennison (US, Textil-DPP), Plan-A (DE), Sustamize, Spherity (DE). 6+ direkte Wettbewerber. Hard-Fail-Trigger erfüllt."]},c_v2:null
+}
+,
+{n:"Forced-Labour-Reg-Lieferkette Importeure",r:"22.05 Daily",cat:"RegTech/Import",k_app:true,stage:"2-complete",
+  desc:"FLR-Compliance-Tool für 6.000 DE-Importeure >10 Mio Umsatz. Trigger 14.12.27 Pflicht. Pool: alle Importeure. Wettbewerb: Sayari, Sourcemap, Assent, Achilles, Sphera.",
+  brief_v1:{core_problem:"EU-FLR 14.12.27 verbietet Forced-Labour-Produkte; Importeur-Pflicht",target_customer:"6.000 DE-Importeure >10 Mio Umsatz",economic_buyer:"Procurement-Direktor + Compliance",product_concept:"Lieferketten-Mapping + Forced-Labour-Risk-Scoring + Investigation-Doku",current_alternative:"Excel + Sayari ad-hoc",why_now:"14.12.27 Pflicht; Guidelines 14.06.26",monetization:"SaaS 15-50k/J",geography:"DACH",wedge:"Mittelstand-Pricing vs. Sayari-Enterprise",critical_assumptions:"Sayari/Sourcemap expandieren nicht in Mittelstand"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[13,"pass","high","14.12.27 Pflicht real; Pool 6.000 ok. Quellen: single-market-economy.ec.europa.eu FLR, squirepattonboggs.com 2025."],
+    m:[10,"unknown","medium","Lieferketten-Mapping-Tool in 7 Mo MVP machbar."],
+    t:[9,"unknown","medium","Procurement-Buyer; Sales-Cycle 6-12 Mo."],
+    k:[10,"unknown","medium","AI-Risk-Scoring profitiert."],
+    e:[9,"fail","medium","15-50k × 600 Kunden = 9-30 Mio ARR Theorie."],
+    w:[8,"fail","high","Sayari (US, $235M+ Funding), Sourcemap (US), Assent Compliance (CA), Achilles (UK), Sphera (DE-stark), IntegrityNext (DE), osapiens (DE) — 7+ direkte Wettbewerber. Hard-Fail."]},c_v2:null
+}
+,
+{n:"Repair-Score-Stack Geräte-Hersteller",r:"22.05 Daily",cat:"RegTech/Industry",k_app:true,stage:"red-flag",
+  desc:"R2R-Compliance-Tool für 2.000 DE-Geräte-Hersteller. Trigger 31.07.26 Pflicht-Implementation. Wedge: Ersatzteil-Portal + Reparaturpreis-Liste + 3rd-Party-Reparatur-Plattform. KILLER: ElektroG-Anbieter + ProduktDatenfabrik + iFixit DACH bereits im Markt.",
+  brief_v1:{core_problem:"R2R 31.07.26 Pflicht: Ersatzteile + Reparatur-Info + Preisliste + Free-Repair-Window",target_customer:"2.000 DE-Geräte-Hersteller in 9 Kategorien",economic_buyer:"After-Sales-Direktor + Product-Compliance",product_concept:"Ersatzteil-Portal + Repair-Info-Hub + Pricing-Tool",current_alternative:"Excel + ERP-Add-On",why_now:"31.07.26 Pflicht; ElektroG-Reform",monetization:"SaaS 15-40k/J",geography:"DACH",wedge:"Standalone vs. ERP-Add-On",critical_assumptions:"SAP/Microsoft/iFixit expandieren nicht in R2R-Tool"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[14,"pass","high","31.07.26 Pflicht; Pool 2.000 ok. Quellen: BMJV Pressemitteilung 0325/2026, IHK München 2026, Hogan Lovells 'New repair law' 2026."],
+    m:[10,"unknown","medium","MVP machbar in 6 Mo."],
+    t:[8,"fail","medium","After-Sales-Direktor-Buyer 6-12 Mo Sales; ERP-Anbieter sind Inkumbenten."],
+    k:[8,"fail","medium","Pricing-Tool/Workflow Commodity."],
+    e:[8,"fail","medium","15-40k × 400 Kunden = 6-16 Mio ARR Theorie."],
+    w:[null,"fail","high","🚩 RED FLAG: ProduktDatenfabrik (DE, R2R-Spezialist), iFixit-DACH (US-DE Marktplatz), Trade-e-bility (DE, Compliance-Service), SAP After-Service-Module, Microsoft Dynamics After-Sales, Avantgarde (DE), elektrogesetz.de Beratung. 6+ direkte DE/US-Wettbewerber im Markt vor Pflicht-Start. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
 ];
 
 // =====================================================================
