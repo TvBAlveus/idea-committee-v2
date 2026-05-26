@@ -8,7 +8,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Idea Kill Committee – Daily Pipeline (22.05.2026)</title>
+<title>Idea Kill Committee – Daily Pipeline (26.05.2026)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
 <style>
@@ -186,8 +186,8 @@ table.criteria td:first-child { color: var(--muted); width: 220px; }
   <!-- ============================================================ -->
   <section id="tab-pipeline" class="tab-content">
     <h2>Alle gescreenten Ideen – Master-Liste mit Quick-Score (1-10)</h2>
-    <p class="legend">Wächst täglich. Enthält ALLE Ideen aller bisherigen Runs (Hold, Proceed, Reject). Klick auf eine Idee mit <strong>📋</strong>-Icon öffnet die vollständige Deep-Dive-Auswertung. 95 von 702 Ideen haben einen Deep-Dive. Theme-Marker: <strong>🛐</strong> Kirche · <strong>🌙</strong> Schlaf · <strong>🌅</strong> Senioren / Best Ager · <strong>🐾</strong> Tier-Nahrungsergänzung. Einträge ohne Marker = Daily-Run.</p>
-    <p class="legend" style="margin-top:6px; color:#6b5300;">⚠️ Vorhandene Runs: ... + Daily 19.05 (100), Daily 20.05 (100), Daily 21.05 (100), <strong>Daily 22.05 (100)</strong> = 912 Einträge total.</p>
+    <p class="legend">Wächst täglich. Enthält ALLE Ideen aller bisherigen Runs (Hold, Proceed, Reject). Klick auf eine Idee mit <strong>📋</strong>-Icon öffnet die vollständige Deep-Dive-Auswertung. 106 von 802 Ideen haben einen Deep-Dive. Theme-Marker: <strong>🛐</strong> Kirche · <strong>🌙</strong> Schlaf · <strong>🌅</strong> Senioren / Best Ager · <strong>🐾</strong> Tier-Nahrungsergänzung. Einträge ohne Marker = Daily-Run.</p>
+    <p class="legend" style="margin-top:6px; color:#6b5300;">⚠️ Vorhandene Runs: ... + Daily 19.05 (100), Daily 20.05 (100), Daily 21.05 (100), Daily 22.05 (100), <strong>Daily 26.05 (100)</strong> = 1012 Einträge total.</p>
     <div id="grid-pipeline"></div>
   </section>
 
@@ -1688,6 +1688,108 @@ const pipeline = [
   ["2026-05-22","AI-Bürgerausweis-Wallet B2B","FinTech B2B","Yes-für-Onboarding","800k KMU mit Identifikat.",5,"Reject","Yes/IDnow/SOFORT-Walled-Garden"],
   ["2026-05-22","AI-Geschäftsführerhaftung-Tracker","LegalTech B2B","D&O-Insurance-Tracker","800k GmbH-GF",5,"Reject","Allianz/AXA-Walled-Garden"],
   ["2026-05-22","AI-Versicherungsschäden-Workflow KMU","InsurTech","Sprout-Insure","220k KMU",4,"Reject","Generali/Allianz-Walled-Garden"],
+
+  // ---- Daily-Run 26. Mai 2026 (100 Ideen) ----
+  ["2026-05-26","CBAM-Voll-Compliance Stahl/Alu-Importeure","RegTech/Import","Tanso/CarbonChain DACH","5.500 DE-Importeure",7,"Reject","CBAM Voll-Phase 01.01.26 + Zertifikatpflicht 02/27; aber Tanso/CarbonChain/Sphera/SAP/AEB 5+ direkte; red-flag"],
+  ["2026-05-26","DAC8-Krypto-Reporting für Steuerberater","RegTech/Crypto","Blockpit für StB","3k StB mit Krypto-Mandanten",7,"Reject","DAC8 01.01.26 Pflicht; Blockpit/CoinTracking/Koinly DAC8-ready; red-flag"],
+  ["2026-05-26","EU Pay Transparency Directive Toolkit Mittelstand","HRTech/RegTech","Synd.io/Ravio DACH","Mittelstand 100-2k MA",8,"Reject","EntgTranspG-Tightening 07.06.26; Personio Gender-Pay-Gap Q1/26 + Ravio + Syndio + Beqom + Figures + 4 DACH-Tools; red-flag"],
+  ["2026-05-26","Listing-Act-Prospekt-AI Mittelstands-IPO","LegalTech/AI","Spellbook für IPO","Niche IPO-Berater",5,"Reject","Goldman/Houlihan dominieren; Niche"],
+  ["2026-05-26","Single-Customs-Window Plattform DACH","RegTech/Trade","Riege+AEB für SCW","Speditionen 5-50 MA",6,"Reject","EU Customs Reform 2028 zu früh; AEB/Riege etabliert; Window noch lang"],
+  ["2026-05-26","AGENT-PEPP Datenschutz für DACH-KMU","RegTech/Privacy","DataGuard-Light","DSB KMU",4,"Reject","ePrivacy stagniert; DataGuard/Proliance etabliert"],
+  ["2026-05-26","EPBD-Energieausweis-AI Mehrfamilienhaus","PropTech/Energy","Plan-A/iSFP DACH","Hausverwaltungen + Eigentümer",6,"Reject","EPBD-Umsetzung 2026; aber Plan-A/co2online/iSFP-Anbieter etabliert"],
+  ["2026-05-26","Soil-Monitoring-Compliance-Stack Industriestandorte","RegTech/Umwelt","TerraGo für Soil","Industrie-Umweltbeauftragte",6,"Reject","EU Soil Law Trilog 03/26; Frist ~2029 zu früh; Pool klein"],
+  ["2026-05-26","Wohngeldreform-Antrag-AI Servicestelle","GovTech/AI","Spellbook für Wohngeldamt","Wohngeldstellen Kommunen",4,"Reject","Kein neuer Trigger; B2G slow"],
+  ["2026-05-26","DIN-VDE-Norm-Update-Tracker Elektro-Hersteller","RegTech/Industry","Beuth+AI für VDE","R&D Elektro 100-2k MA",6,"Reject","Beuth/DKE etabliert; Normen-API nicht offen"],
+  ["2026-05-26","Berufskraftfahrer-Qualifikations-Schulungs-AI","EdTech/B2B","Doceba für BKrQG","Speditionen + Fahrschulen",5,"Reject","DEKRA/TÜV-Akademien dominieren"],
+  ["2026-05-26","Krankenhaus-Leistungsgruppen-Mapping Mid-Tier","HealthTech/B2B","KLAAS für Mid-Tier","KH 200-800 Betten",5,"Reject","KHVVG state-mandated KLAAS; bereits 24.05 gekillt"],
+  ["2026-05-26","GEFMA-FM-Compliance-Stack Mittelstands-FM","PropTech/B2B","Planon DACH-light","FM-Leitung Mittelstand",5,"Reject","Planon/IBM TRIRIGA/Spacewell etabliert"],
+  ["2026-05-26","AI-Kassenbon-Werbung Hyperlocal Einzelhandel","AdTech/B2B","Local-Coupon-Print","Lokale Geschäfte",3,"Reject","Niche; B2C-Adoption-Risiko"],
+  ["2026-05-26","PfandBR-Mehrwegquote-Tracker Gastro","RegTech/Food","ResQ für Mehrwegquote","Gastro-Ketten",4,"Reject","VerpackG stabil; Gastro preissensibel"],
+  ["2026-05-26","AI-Lohnsteueranmeldung Outsourcing Mittelstand","FinTech/Tax","Personio Tax","HR Mittelstand",4,"Reject","DATEV-Walled-Garden"],
+  ["2026-05-26","Mittelstands-IT-Asset-Inventur AI CRA/NIS2","Cyber/B2B","Lansweeper für NIS2","CISO Mittelstand 100-500 MA",6,"Reject","Snyk/JFrog/Lansweeper bedienen; CRA/NIS2 erfüllt von Inkumbenten"],
+  ["2026-05-26","GwG-Schulungs-Pflicht-Tracker Banken/StB/RA","RegTech/AML","KnowBe4 für GwG","Compliance-Officer",5,"Reject","KnowBe4/CompliWise/Comma Soft etabliert"],
+  ["2026-05-26","Wahllokale-Logistik-AI Bundes-/Landtagswahlen","GovTech","Election-Buddy DACH","Wahlämter",3,"Reject","4-jähriger Zyklus; B2G slow"],
+  ["2026-05-26","Erbrecht-DACH-Cross-Border-Tool Notare/RA","LegalTech/B2B","CrossBorder Erbrecht","Notare + Erbrecht-RA",4,"Reject","EuErbVO seit 2015 stabil"],
+  ["2026-05-26","PV-Anlagen-Direktvermarktung-Reporting EEG-Reform","EnergyTech","Next-Kraftwerke-Light","PV-Betreiber + Direktvermarkter",6,"Reject","Next Kraftwerke/Statkraft/Trianel etabliert"],
+  ["2026-05-26","Bauantrag-3D-BIM-Pre-Check Bauämter","GovTech/AI","xPlanung+AI","Bauämter Kommunen",5,"Reject","B2G slow; xPlanung-Pilot"],
+  ["2026-05-26","ETS2 Brennstoff-Compliance Heizöl-/Erdgashändler","RegTech/Energy","Normec für ETS2","Brennstoffhändler",7,"Reject","ETS2 ab 2027; Normec Verifavia/DNV/LR/TÜV/GUTcert Verifier dominieren + Pool ~600 zu klein"],
+  ["2026-05-26","AI-Restaurant-Bewertungs-Antwort Gastro-Ketten","MarTech/AI","Birdeye DACH","Marketing Gastro-Kette",3,"Reject","Birdeye/Podium dominieren"],
+  ["2026-05-26","AI-Mängelmelder-App Quartiers-/Hausverwaltungen","PropTech/B2B","casavi für Mängel","Hausverwaltungen",4,"Reject","casavi/etg24 etabliert"],
+  ["2026-05-26","Tarifrunden-Forecast-AI Verbände/Arbeitgeber","HRTech/AI","Lattice für Tarif","Arbeitgeberverbände",4,"Reject","B2G-langsam; sehr klein"],
+  ["2026-05-26","Mittelstand-CMS-DSGVO-Voll-Pre-Audit","RegTech/Privacy","DataGuard-Voll","DSB Mittelstand",5,"Reject","OneTrust/DataGuard/Proliance etabliert"],
+  ["2026-05-26","Mittelstands-OKR-Tool mit GuV-Reflection","HRTech/AI","Lattice GuV","GF Mittelstand",4,"Reject","Lattice/Workpath/15Five dominieren"],
+  ["2026-05-26","AI-Versicherungs-Schadensregulierung Kfz-Werkstätten","InsurTech/B2B","HUK-Schadenservice-Light","Werkstatt-Inhaber",4,"Reject","BAUA/CARSERVICE24 etabliert"],
+  ["2026-05-26","AI-Vereinszweck-Konformitätscheck Gemeinnützigkeit","LegalTech/AI","Spellbook Verein","Vereinsvorstände + StB",4,"Reject","Spezialist-StB; vereinsknowhow.de gratis"],
+  ["2026-05-26","GovTech-Cash-Account Public-Sector Fördermittel","FinTech/B2G","Tipalti-Bank für Föderal","Förder-Manager Kommunen",4,"Reject","B2G slow"],
+  ["2026-05-26","GWG-Investitions-Buchungs-AI Mittelstand","FinTech/Tax","DATEV-GWG-Add-On","Buchhalter Mittelstand",4,"Reject","DATEV-Modul macht das; Niche"],
+  ["2026-05-26","AI-Hauswart-Service-Plattform","PropTech/B2C","TaskRabbit für Hauswart","Eigentümergemeinschaften",3,"Reject","Niche; lokale Hauswarte etabliert"],
+  ["2026-05-26","AI-Patentanmeldungs-Pre-Check KMU","LegalTech/AI","PatSnap für KMU","R&D KMU + Patent-RA",4,"Reject","PatSnap/Anaqua/Dennemeyer etabliert"],
+  ["2026-05-26","Veterinär-Wartezimmer-Optimierungs-AI","VetTech","Doctolib für Tierärzte","Tierarztpraxen",4,"Reject","Doctolib-Tierarzt existiert"],
+  ["2026-05-26","AML6-Erweitertes-Lieferanten-Screening Mittelstand","RegTech/AML","Sayari für Mittelstand","Compliance Mittelstand",7,"Reject","AML6 07/27; aber SIP/ACTICO/Sumsub/Tipalti/Sayari + 800 IT-Channel; red-flag"],
+  ["2026-05-26","AI-Lernpfad-Generator Berufsausbildung Mittelstand","EdTech/B2B","Cornerstone für Azubis","Ausbildungsleiter Mittelstand",4,"Reject","Doceba/Cornerstone/360Learning etabliert"],
+  ["2026-05-26","Carbon Removal-Markt Compliance/Procurement KMU","ClimateTech","Watershed für KMU","Sustainability KMU",5,"Reject","CDR-Markt jung; Climeworks/Heirloom direkt B2B"],
+  ["2026-05-26","Mittelstand-Mitarbeiter-Aktien-Verwaltung","FinTech/HR","Carta DACH","CFO Tech-Mittelstand",4,"Reject","Carta/Capdesk-DE etabliert"],
+  ["2026-05-26","AI-Energie-Lieferanten-Audit Industrie EED Art. 11","RegTech/Energy","Schneider für EED","Industrie-Energie-Compliance",6,"Reject","EED Recast Art. 11; aber Schneider/Siemens/IBM Envizi etabliert"],
+  ["2026-05-26","PeBeM Pflegeheim-Personalbemessungs-AI","HealthTech/B2B","Vivendi für PeBeM","PDL Pflegeheime",7,"Reject","PeBeM Pflicht 31.12.25 vorbei; Vivendi/compassio/Curacon dominieren; red-flag"],
+  ["2026-05-26","E-Akte-Pflichtmigration Kanzleien beA","LegalTech/B2B","RA-MICRO beA","Anwaltskanzleien",5,"Reject","RA-MICRO/AnNoText dominieren"],
+  ["2026-05-26","Insolvenz-Vermögenssichtung-AI Insolvenzverwalter","LegalTech/AI","STP+Winsolvenz-AI","Insolvenzverwalter",5,"Reject","Winsolvenz/STP etabliert; Niche"],
+  ["2026-05-26","AI-Vereins-Steuererklärung KSt 1/KSt 4","FinTech/Vereine","Lexware Vereine","Schatzmeister",4,"Reject","Easyverein/Lexware etabliert"],
+  ["2026-05-26","AI-Mitarbeitergespräch-Voicebot DEU-Arbeitsrecht","HRTech/AI","Lattice Voice","HR-Manager",3,"Reject","BR-Mitbestimmung blockiert"],
+  ["2026-05-26","AI-Geschäftsreise-Kompliance Spesen-Steuer","FinTech/B2B","Pleo für Compliance","CFO Mittelstand",4,"Reject","Pleo/Spendesk/Circula etabliert"],
+  ["2026-05-26","Bauunternehmer-Liquiditäts-AI Werkvertrags-Cashflow","FinTech/Build","Agicap für Bau","Bauunternehmer 20-200 MA",5,"Reject","Agicap/Pulse etabliert; kein Bau-Spezifikum"],
+  ["2026-05-26","AI-PSA-Pflicht-Dokumentation Industrie","RegTech/Industry","SafetyCulture-EU","Sicherheitsbeauftragter",4,"Reject","DGUV/BG-Software etabliert"],
+  ["2026-05-26","AI-Pflegedienst-Tourenplaner SGB-XI Routing","HealthTech/Log","Routific+SGB-XI","Pflegedienst-Leitung",6,"Reject","CGM/Senso/Routific/myneva etabliert"],
+  ["2026-05-26","AI-Berufung-Schriftsatz-Generator Gerichte","LegalTech/AI","Harvey für Berufung","Rechtsanwälte",4,"Reject","Spellbook/Harvey/Legora etabliert"],
+  ["2026-05-26","AI-Erbschein-Antrag-Service B2C","LegalTech/B2C","Geblin für Erben","Erben B2C",4,"Reject","Geblin/Erbpilot etabliert"],
+  ["2026-05-26","NIS2-Audit-Vorbereitungs-AI Lieferketten-KRITIS","Cyber/RegTech","Vanta NIS2 DACH","CISO KRITIS",6,"Reject","Vanta/Drata-DE/securaze etabliert"],
+  ["2026-05-26","Glean für Mittelstand DACH (Enterprise Search)","SaaS/AI","Glean DACH","CIO Mittelstand",5,"Reject","Glean/Hebbia direkt; M365 Copilot"],
+  ["2026-05-26","AI-Verkehrssicherungs-Plan Bauträger","ConTech/B2B","VTV-Plan-AI","Bauleitung",4,"Reject","VTV-Berater etabliert"],
+  ["2026-05-26","Schiffs-Crew-Pflicht-Doku Binnenschifffahrt","RegTech/Trade","Bordkasse-Light","Binnenschiff-Reeder",4,"Reject","Niche; 2k Reeder DE"],
+  ["2026-05-26","AI-Sportverein-Mitglieder-Zahlung-DACH","FinTech/Vereine","Easyverein DACH","Schatzmeister Sportverein",4,"Reject","Easyverein/SimpleClub etabliert"],
+  ["2026-05-26","Mittelstand-EU-Funding-Antrags-AI Horizon Europe","FinTech/AI","EuroFinder+AI","R&D-Leitung Mittelstand",5,"Reject","EuroFinder/2getherEU etabliert; ~3k Förderberater Niche"],
+  ["2026-05-26","Stadtwerke-Energiehandel-Auto-Bidding","EnergyTech/B2B","Trianel-Auto","Energiehändler Stadtwerke",4,"Reject","Next Kraftwerke/Trianel etabliert"],
+  ["2026-05-26","AI-Wertgutachten Immobilien §194 BauGB","PropTech/AI","PriceHubble für Gutachter","Sachverständige + Banken",5,"Reject","Sprengnetter/PriceHubble/Realxdata etabliert"],
+  ["2026-05-26","AI-Kapitalanleger-Versteuerung Kapitalerträge DE","FinTech/B2C","Wundertax Kapital","B2C Anleger",4,"Reject","Trade Republic/Scalable steueroptimiert; Wundertax/Taxfix etabliert"],
+  ["2026-05-26","Schulträger-NIS2 Pflicht-Cybersicherheit Bildung","Cyber/EdTech","Vanta für Schulen","Schulträger Landesbehörde",4,"Reject","NIS2 Schulen-Erweiterung unklar; B2G slow"],
+  ["2026-05-26","Carbon-Insetting Mittelstand-Logistik DACH","ClimateTech","CarbonChain Logistik","CSR Logistik",4,"Reject","Climeworks/CarbonChain/Watershed etabliert"],
+  ["2026-05-26","AI-Patient-Notfalldokumentation Rettungsdienst","HealthTech/B2G","NIDA Voice","Rettungswachen",4,"Reject","NIDA/RescueTrack etabliert; B2G slow"],
+  ["2026-05-26","AI-Hofnachfolge-Übergabe-Plattform Landwirtschaft","AgriTech","FarmTransfer DACH","Landwirte 55-65J",5,"Reject","Maschinenringe/StB etabliert; Niche-B2C"],
+  ["2026-05-26","PIM-Light für Mittelstands-Hersteller GPSR","SaaS/B2B","Akeneo PIM-Light","Marketing-Manager",7,"Reject","GPSR seit 13.12.24 — kein neuer 2026-Trigger; Akeneo/Pimcore/Contentserv etabliert; red-flag"],
+  ["2026-05-26","AI-Aufzugswartungs-Compliance-Cloud","PropTech/RegTech","Lift1 für Compliance","Aufzugswartung",4,"Reject","Schindler/TKE/Lift1 etabliert"],
+  ["2026-05-26","AI-Heizöl-/Pellets-Bestand-Tracker Wohngeld","PropTech/B2C","HKA für Wohngeld","Eigentümer",3,"Reject","HKA/Verbund-Apps existieren"],
+  ["2026-05-26","AI-Kfz-Versicherungswechsel-Automator B2C","InsurTech/B2C","CHECK24-Auto","B2C",3,"Reject","CHECK24/HUK-direkt dominieren; B2C-CAC tot"],
+  ["2026-05-26","AI-Anforderungs-Management Behörden-Ausschreibungen","GovTech/AI","DTAD-Vergabe","Vergabestellen",4,"Reject","DTAD/Patterno etabliert"],
+  ["2026-05-26","BauNVO-/BImSchG-Pre-Check Industriebau","ConTech/AI","TÜV-Pre-Check","Industriebau-Planung",4,"Reject","TÜV/Drees&Sommer/Arcadis etabliert"],
+  ["2026-05-26","BaaS-Bridge Mittelstands-Bilanzfinanzierung","FinTech/B2B","Solaris für Mittelstand","CFO Mittelstand",4,"Reject","BaFin-Lizenz teuer; Solaris/Treezor abrasiv"],
+  ["2026-05-26","AI-Heilpraktiker-Praxis-Stack DSGVO/Steuer","HealthTech/B2B","Praxisstuhl Light","Heilpraktiker",3,"Reject","Praxisstuhl/Wiso etabliert; Niche"],
+  ["2026-05-26","AI-Praktikanten-Vermittlung Schule-Industrie","EdTech/B2B","Praktikum-Match","Schulen + Betriebe",3,"Reject","Niche; B2G slow"],
+  ["2026-05-26","AI-Bauleiter-Sicherheitscheck Foto-Compliance","ConTech/AI","PlanRadar Safety","Bauleiter",4,"Reject","PlanRadar/Capmo etabliert"],
+  ["2026-05-26","AI-Tarifverhandlung-Berater HR-Mittelstand","HRTech/AI","Lattice-Tarif","HR Mittelstand",3,"Reject","BR-Mitbestimmung blockiert"],
+  ["2026-05-26","AI-Beschaffung-Single-Source-Risk-Audit","SaaS/B2B","Sayari für Single-Source","Einkaufsleitung",5,"Reject","Sayari/IntegrityNext etabliert"],
+  ["2026-05-26","AI-Bürgerbeteiligung Stadtplanung Visualisierung","GovTech","CONSUL DACH","Stadtplanung",3,"Reject","CONSUL/POLITEIA etabliert; B2G slow"],
+  ["2026-05-26","Inkasso-as-a-Service Mittelstand-Plattformen RDG","FinTech/B2B","CollectAI für Plattformen","Plattformen B2B-Forderungen",4,"Reject","CollectAI/Pair Finance etabliert"],
+  ["2026-05-26","AI-Selbstbedienungs-Auflagen Onlinehandel","RegTech/eCommerce","Trusted Shops AI","Onlinehändler",4,"Reject","Trusted Shops/eRecht24 etabliert"],
+  ["2026-05-26","AI-Steuer-Vorausschau Selbstständige","FinTech/B2C","Wundertax Solo","Selbstständige",3,"Reject","Lexware/sevDesk/Wundertax etabliert"],
+  ["2026-05-26","AI-Versicherungsmakler-Pflicht-Beratungs-Doku","InsurTech/B2B","Professional Works AI","Versicherungsmakler",6,"Reject","§61 VVG; aber DEMV Professional Works (Marktführer 83 Pkt) + zeitsprung MVP + smartinsurtech + 46 Anbieter im Test; red-flag"],
+  ["2026-05-26","AI-Schuldnerberatung Verbraucher-Insolvenz","FinTech/B2C","Caritas-Digital","Schuldnerberatungen",3,"Reject","Caritas/Diakonie kostenlos"],
+  ["2026-05-26","AI-Fahrzeug-Restwert-Prognose Leasing-Endkunden","AutoTech/B2B","DAT-AI","Leasing-Manager",4,"Reject","DAT/Schwacke/JATO etabliert"],
+  ["2026-05-26","AI-Krippen/-Kita-Bedarfsanalyse Kommunen","GovTech","KitaBedarf-AI","Jugendamt",4,"Reject","B2G slow; Niche"],
+  ["2026-05-26","AI-Privatschulanmeldung B2C-Portal","EdTech/B2C","SchoolMatch DACH","Eltern",2,"Reject","B2C-CAC unrealistisch"],
+  ["2026-05-26","AI-Risiko-Komitee-Doku Sparkassen/Mid-Cap","FinTech/RegTech","SAS für Sparkassen","Risiko-Manager",5,"Reject","DSGV/SAS/FIS etabliert; B2B-Sales 9-18 Mo"],
+  ["2026-05-26","Mittelstand-IP-Inventur-AI Patent-/Markenportfolio","LegalTech/AI","Anaqua-Light","R&D + Patent-RA",3,"Reject","Anaqua/PatSnap etabliert"],
+  ["2026-05-26","AI-Wohnungsbau-Förderprogramm-Finder KfW/IBB","PropTech/FinTech","Interhyp KfW","Bauträger + Eigentümer",4,"Reject","baufinanzierung.de/Interhyp etabliert"],
+  ["2026-05-26","AI-Lieferanten-Onboarding-Audit-Trail Pharma","PharmaTech/B2B","Veeva DACH","Compliance Pharma",5,"Reject","Veeva/MasterControl/Sparta etabliert"],
+  ["2026-05-26","AI-Strom-Verbrauch-Vorhersage Industriekunden","EnergyTech/B2B","AutoGrid DACH","Energie-Manager Industrie",4,"Reject","Next Kraftwerke/Statkraft/AutoGrid etabliert"],
+  ["2026-05-26","Mittelstand-Sales-Engagement DACH","SaaS/AI","Outreach DACH","Vertriebsleitung",3,"Reject","Outreach/Salesloft/Apollo dominieren"],
+  ["2026-05-26","AI-Recycling-Datenbank-Update WEEE","RegTech/eWaste","EAR-AI","WEEE-Compliance",5,"Reject","Stiftung EAR + Take-e-Way etabliert"],
+  ["2026-05-26","AI-Sortenrecht-Datenbank Pflanzenzüchter","AgriTech/Legal","UPOV-AI","Pflanzenzüchter + Notare",3,"Reject","BVS/UPOV-Datenbank existiert; Niche"],
+  ["2026-05-26","AI-Trinkwasser-Pflicht-Beprobung Wohngeb-Eigentümer","PropTech/RegTech","SGS für TrinkwV","Hausverwalter + WoBe",5,"Reject","GTÜ/SGS/eurofins etabliert; Markt fragmentiert aber Labor-dominiert"],
+  ["2026-05-26","E-Rezept-Praxis-Workflow-Bridge Vor-Ort","HealthTech/B2B","CGM E-Rezept Bridge","Praxen + Apotheken",4,"Reject","gematik/CGM/Doctolib etabliert"],
+  ["2026-05-26","AI-Verein-Steuer-Brief-DSGVO-Templates","LegalTech/Vereine","Easyverein-Templates","Vereinsvorstände",3,"Reject","Easyverein etabliert"],
+  ["2026-05-26","AI-Krankenkassen-Beitragsbescheid-Prüfer KMU","HealthTech/B2C","KK-App","Personal + Mitarbeiter",3,"Reject","Niche; KK-Apps decken ab"],
+  ["2026-05-26","AI-Tariflohn-Berechnung Bauhauptgewerbe","HRTech/AI","SOKA-BAU-AI","Lohnabrechner Bau",3,"Reject","SOKA-BAU/DATEV etabliert"],
+  ["2026-05-26","AI-EUDR-DDS-Bridge Bäckerei (Mehl/Kakao/Soja)","RegTech/Food","osapiens Bäckerei","Bäcker-Verbände + Mittelstand",5,"Reject","EUDR Verschiebung 30.12.25; osapiens/SourcingHub etabliert; bereits 21.05 rejected"],
+  ["2026-05-26","AI-Selbstanzeige-Steuerbetrug §371 AO","LegalTech/B2C","Steuer-Selbstanzeige","B2C Steuerpflichtige",3,"Reject","Anwaltspflicht; B2C-CAC heikel"],
 ];
 
 // Daten-Mapping: original [Datum, Idee, Kategorie, Inspiration, Zielkunde, Score, Verdict, Killer]
@@ -4932,6 +5034,145 @@ const holdRanking = [
     k:[8,"fail","medium","Pricing-Tool/Workflow Commodity."],
     e:[8,"fail","medium","15-40k × 400 Kunden = 6-16 Mio ARR Theorie."],
     w:[null,"fail","high","🚩 RED FLAG: ProduktDatenfabrik (DE, R2R-Spezialist), iFixit-DACH (US-DE Marktplatz), Trade-e-bility (DE, Compliance-Service), SAP After-Service-Module, Microsoft Dynamics After-Sales, Avantgarde (DE), elektrogesetz.de Beratung. 6+ direkte DE/US-Wettbewerber im Markt vor Pflicht-Start. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
+,
+// ====== DAILY-RUN 26.05.2026 — Stage 2 (Red-Flag-Welle) ======
+{n:"EU Pay Transparency Directive Toolkit Mittelstand",r:"26.05 Daily",cat:"HRTech/RegTech",k_app:true,stage:"red-flag",
+  desc:"SaaS-Toolkit für EU-Pay-Transparency-Directive Umsetzung in DE-Mittelstand. Gender-Pay-Gap-Reports + Job-Posting-Salary-Range + Audit-Workflow für Unternehmen 100-2k MA. Pflicht-Trigger 07.06.2026 EU-Frist; DE-Tightening EntgTranspG ab 100 MA. Wedge: AI-gestützter Audit-Workflow vs. Anwaltsgutachten.",
+  brief_v1:{core_problem:"EU Pay Transparency Directive Frist 07.06.2026: Gender-Pay-Gap-Reports + 5%-Schwellwert + 6-Mo-Action; KMU-Verschärfung für 100+ MA",target_customer:"DE-Mittelstand 100-2.000 MA",economic_buyer:"HR-Direktor + Legal-Counsel",product_concept:"SaaS Gender-Pay-Gap-Analyzer + Job-Posting-Toolkit + Audit-Workflow",current_alternative:"Excel + Anwaltskanzlei-Gutachten (Deloitte/Baker Tilly) ad-hoc",why_now:"07.06.26 EU-Frist; Federal Labour Court erhöht Haftung; DE-Draft Bill Anfang 2026",monetization:"SaaS 8-25k EUR/J",geography:"DACH",wedge:"AI-gestütztes Pay-Gap-Audit + Job-Posting-Bridge gegen Anwaltsgutachten",critical_assumptions:"(1) Personio/Workday/SAP rüsten kein integriertes Modul nach (2) Mittelstand kauft Standalone-SaaS vs HRIS-Modul"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[16,"pass","high","Sehr stark: 07.06.26 EU-Frist + EntgTranspG-Verschärfung; Reporting-Pflicht für 100+ MA Annual (>250 MA) bzw. alle 3J (100-249); 5%-Lücken-Trigger + 6-Mo-Korrektur. Quellen: Deloitte CH/DE Implementation Tracker, Personio Leitfaden 2026, Ashurst Employment Update 2026."],
+    m:[14,"pass","medium","SaaS-Audit-Tool mit HRIS-Konnektoren in 6 Mo machbar; aber HRIS-Vendor-Lock (Personio/Workday) als integriertes Modul deutlich überlegen für Mittelstand."],
+    t:[10,"unknown","medium","HR-Direktor-Buyer 6-9 Mo Cycles; Anwaltskanzlei-Kanal teilweise dominant für Audit-Risikomanagement; Personio-Lock im Mittelstand."],
+    k:[8,"fail","medium","🚩 KI-Audit-Tool 2026 Standard; Personio/Ravio/Synd.io/Beqom alle mit AI-Audit-Workflow + Pay-Gap-Analytics; kein nachhaltiger Wedge."],
+    e:[9,"fail","medium","8-25k EUR/J × 1k Mittelständler = 8-25 Mio TAM; aber gegen 6+ Inkumbenten unrealistisch >5-8% Marktanteil; Bootstrap-Frontalangriff aussichtslos."],
+    w:[null,"fail","high","🚩 RED FLAG: Personio (Munich, $8.5B, Gender-Pay-Gap-Report Q1/Q2 2026 in HRIS-Bestandskunden integriert per personio.de Webinar 04/26), Ravio (UK/EU, EU-Transposition-Tracker + 300k Compensation-Datenpunkte per ravio.com), Synd.io PayEQ (US, EU-Tracker + Audit-Software), Beqom + PayAnalytics (CH-Enterprise), Figures (FR, EU-Pay-Equity-Tool per figures.hr), HCM SSC GmbH (DACH), paygaps.de (DE, dedizierte Plattform), helix HR (DE), aivy.app (DE), Compport, captivateiq, plus SAP HCM Gender-Pay-Gap-Report. 8+ direkte Wettbewerber INKL. Mittelstand-Marktführer Personio mit Q1/26-Launch. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
+,
+{n:"CBAM-Voll-Compliance Stahl/Alu-Importeure",r:"26.05 Daily",cat:"RegTech/Import",k_app:true,stage:"red-flag",
+  desc:"SaaS-Compliance-Tool für CBAM-Voll-Phase ab 01.01.2026 mit echten Zertifikatpflichten + quartalsweisen Reports. Pool ~5.500 DE-Importeure von Stahl/Alu/Zement/H2/Düngemitteln >50t. Wedge: Mittelstand-fokussiert vs. Großkonzern-Tools.",
+  brief_v1:{core_problem:"CBAM Voll-Phase 01.01.26: alle Importeure brauchen 'Authorized CBAM Declarant'-Status + Zertifikate ab 02/27 für Emissionen 2026",target_customer:"DE-Stahl/Alu/Zement/Düngemittel-Importeure >50t/J",economic_buyer:"Compliance/Zoll-Leiter",product_concept:"SaaS: Lieferanten-Emissionen-Sammler + Zertifikat-Rechner + DEHSt-API-Bridge",current_alternative:"Excel + AEB/SAP-Compliance + DEHSt-Portal",why_now:"01.01.26 Voll-Phase; 31.03.26 Registrierungs-Frist; 02/27 Zertifikat-Käufe starten",monetization:"SaaS 5-25k EUR/J",geography:"DACH",wedge:"Mittelstand-Stahl/Alu-Fokus vs. Großkonzern-Generalisten",critical_assumptions:"(1) Mittelstand kauft Standalone-Tool vs. AEB-Add-On (2) Lieferanten-Emissions-Daten beschaffbar"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[16,"pass","high","CBAM Voll-Phase 01.01.26 Pflicht; 50t-Schwellwert filtert KMU raus (~5.500 Importeure DE); echte Zertifikatpflichten ab 02/27 für 2026-Emissionen. Quellen: IHK Stuttgart CBAM 2026, EY Tax Magazine 'CBAM wird ernst', Grant Thornton 2026."],
+    m:[14,"pass","medium","SaaS Lieferanten-Datenbank + Zertifikat-Workflow in 6 Mo machbar."],
+    t:[10,"unknown","medium","Compliance/Zoll-Buyer 6-12 Mo Cycles; AEB-Walled-Garden als Inkumbent."],
+    k:[9,"fail","medium","🚩 KI-Lieferanten-Datenbeschaffung 2026 Standard; Tanso/CarbonChain/Sphera/SAP alle mit AI-Emissions-Mapping."],
+    e:[9,"fail","medium","5-25k × 1k Kunden = 5-25 Mio TAM; gegen Tanso/Sphera/SAP/CarbonChain Bootstrap unrealistisch >5% Marktanteil."],
+    w:[null,"fail","high","🚩 RED FLAG: Tanso (Munich DE, dediziertes CBAM-Modul per tanso.de/cbam-software, Sustainability-Suite), CarbonChain (UK, End-to-End-CBAM-Tool per carbonchain.com), Sphera (US/DE, Enterprise-Suite mit CBAM-Workflow per sphera.com), SAP Sustainability (CBAM-Reports automatisiert), IBM Envizi, AEB (DE-Software-Marktführer für Zoll mit CBAM-Modul per aeb.com), Coolset, Ventum Consulting (DE-Beratung). 7+ direkte DE/EU-Wettbewerber INKL. DE-Marktführer Tanso + AEB. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
+,
+{n:"DAC8-Krypto-Reporting für Steuerberater",r:"26.05 Daily",cat:"RegTech/Crypto",k_app:true,stage:"red-flag",
+  desc:"Spezialtool für Steuerberater zur Validierung von DAC8/CARF-Reports ihrer Krypto-Mandanten ab 01.01.2026. Pool ~3.000 StB mit Krypto-Mandantenstamm. Wedge: StB-Workflow vs. B2C-Krypto-Steuer-Tools.",
+  brief_v1:{core_problem:"DAC8/CARF ab 01.01.26: Krypto-Plattformen melden Daten; StB muss Reports validieren + nachbearbeiten",target_customer:"Steuerkanzleien mit Krypto-Mandantenstamm",economic_buyer:"Kanzlei-Inhaber",product_concept:"SaaS: DAC8-Report-Importer + FIFO-Validator + DATEV-Bridge",current_alternative:"Blockpit/CoinTracking als Mandanten-Tool + Excel-Validierung",why_now:"01.01.26 DAC8-Pflicht; erste Meldung 09/27 für 2026",monetization:"SaaS 1-3k EUR/J pro Kanzlei",geography:"DE",wedge:"StB-Workflow vs. B2C-Krypto-Steuer-Tools",critical_assumptions:"(1) Blockpit/CoinTracking expandieren nicht in StB-Workflow (2) StB-Markt klein genug für Bootstrap"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[14,"pass","medium","DAC8 Pflicht-Trigger 01.01.26 hart; ~3k StB mit Krypto-Mandanten Pool — aber Pain v.a. bei B2C-Steuerzahler nicht bei StB; StB übernimmt Output von Blockpit/CoinTracking."],
+    m:[14,"pass","medium","SaaS DAC8-Importer + FIFO + DATEV-Bridge in 6 Mo machbar."],
+    t:[8,"fail","medium","StB-Kanzlei-Markt klein + langsam; DATEV-Walled-Garden."],
+    k:[8,"fail","medium","🚩 KI-Workflow + FIFO-Logik 2026 Standard; Blockpit/CoinTracking/Koinly DAC8-fertig."],
+    e:[7,"fail","medium","1-3k × 1k StB = 1-3 Mio TAM; 20-Mio-Pfad unmöglich."],
+    w:[null,"fail","high","🚩 RED FLAG: Blockpit (AT, DAC8-ready per blockpit.io/dac8, komplette Tax-Reports DE/AT/CH), CoinTracking (DE, FIFO + DAC8-Compliance per cointracking.info), Koinly (US/EU, DAC8-ready 2026), CryptoTax DE, plus DATEV-Krypto-Modul-Erweiterung Q4/25. 4+ direkte DE/EU/AT-Wettbewerber bedienen StB-Pfad via Mandanten-Reports. Hard-Fail-Trigger erfüllt + TAM zu klein für Bootstrap."]},c_v2:null
+}
+,
+{n:"ETS2 Brennstoff-Compliance Heizöl-/Erdgashändler",r:"26.05 Daily",cat:"RegTech/Energy",k_app:true,stage:"red-flag",
+  desc:"Compliance-Tool für Brennstoffhändler unter ETS2 ab 2027 (Heizöl, Gas, Diesel). Verifizierungs-Pflicht für 2025-Emissionen ab 30.04.2026. Pool ~600 DE-Brennstoffhändler. Wedge: Self-Service-Compliance vs. Verifier-Service.",
+  brief_v1:{core_problem:"EU-ETS2 ab 2027 + Verifier-Pflicht 30.04.26 für 2025-Daten; Brennstofflieferanten müssen Zertifikate kaufen + Emissionsreports verifizieren",target_customer:"Brennstoffhändler (Heizöl, Erdgas, Diesel)",economic_buyer:"Compliance Brennstoffhändler",product_concept:"SaaS: Emissions-Sammler + MRV-Workflow + Verifier-Bridge",current_alternative:"Excel + Normec/DNV/TÜV als Verifier",why_now:"30.04.26 erste Verifizierungs-Pflicht; 2027 Voll-ETS2",monetization:"SaaS 5-25k EUR/J",geography:"DACH",wedge:"Self-Service Brennstoff-Compliance vs. Beratung",critical_assumptions:"(1) Brennstoffhändler kaufen SaaS statt Verifier-Service (2) Pool 600 ausreichend"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[14,"pass","medium","ETS2 ab 2027 Pflicht + Verifizierung 30.04.26 hart; aber 50% Pflicht-Aspekt liegt bei Verifier-Service nicht bei Self-Service-Tool. Pool ~600 Brennstoffhändler DE."],
+    m:[14,"pass","medium","SaaS MRV-Workflow + Verifier-Bridge in 6 Mo machbar."],
+    t:[9,"fail","medium","Brennstoffhändler-Markt mittel; Verifier-Service-Beziehung etabliert (Normec/DNV/TÜV)."],
+    k:[8,"fail","medium","KI-Emissions-Mapping 2026 Standard."],
+    e:[8,"fail","medium","5-25k × 300 Kunden = 1,5-7,5 Mio TAM; 20-Mio-Pfad unmöglich; Pool zu klein."],
+    w:[null,"fail","high","🚩 RED FLAG + TAM-FAIL: Normec Verifavia (NL/EU, ERT-Tool ETS2-erweitert per normecverifavia.com/services/eu-ets2-verification, akkreditierter Verifier), DNV (DNV-MRV-Tool maritime + erweitert), Lloyd's Register (LR, statutory-compliance EU-ETS), ClassNK (JP/EU), TÜV-Süd/Nord/Rheinland (DE-Verifier-Akkreditierung), GUTcert (DE), emissionshaendler.com (DE-Service), ACT Group (Beratung), DEHSt-Portal direkt. 6+ akkreditierte Verifier-Anbieter besetzen Service-Layer; Tool-Layer zu schmaler Markt (600 Pool × 20% Marktanteil = ~5 Mio max ARR). Hard-Fail-Trigger erfüllt."]},c_v2:null
+}
+,
+{n:"AML6-Erweitertes-Lieferanten-Screening Mittelstand",r:"26.05 Daily",cat:"RegTech/AML",k_app:true,stage:"red-flag",
+  desc:"Vendor-Screening-SaaS für DE-Mittelstand (50-500 MA) zur Vorbereitung auf AML6/AMLR-Pflicht ab 07/2027. PEP-/Sanktionslisten-Check + Lieferantenrisiko-Audit. Wedge: Mittelstand-fokussiert vs. Großkonzern-Inkumbenten.",
+  brief_v1:{core_problem:"AML6/AMLR ab 10.07.27 direkt anwendbar; Mittelstand muss Lieferanten-Screening systematisieren",target_customer:"DE-Mittelstand 50-500 MA mit Lieferketten",economic_buyer:"Compliance-Officer/CFO",product_concept:"SaaS: PEP/Sanktionsliste-Check + Vendor-Risk-Audit + Document-Trail",current_alternative:"Excel + Refinitiv/Dow-Jones-Lizenz oder kein-Plan",why_now:"AMLA-Behörde 2025 in Frankfurt; AMLR-Anwendung 07/27",monetization:"SaaS 5-15k EUR/J",geography:"DACH",wedge:"Mittelstand-Fokus vs. Refinitiv/LSEG-Großkonzern-Tools",critical_assumptions:"(1) Mittelstand zahlt 5-15k vs. kostenfreie Stichproben (2) AMLR-Pool ausreichend"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[14,"pass","medium","AMLR 10.07.27 Pflicht; AMLA-Behörde 2025 Frankfurt; aber Pflicht-Trigger v.a. für Verpflichtete-Unternehmen (Banken/Versicherer/StB) — Mittelstand-Screening ist sekundär."],
+    m:[14,"pass","medium","SaaS PEP/Sanktion-Bridge in 6 Mo machbar."],
+    t:[9,"fail","medium","Compliance-Officer-Buyer 6-9 Mo; Refinitiv-Lock im Großkonzern."],
+    k:[9,"fail","medium","🚩 KI-Screening 2026 Standard; alle Inkumbenten AI-getrieben."],
+    e:[8,"fail","medium","5-15k × 1k Mittelständler = 5-15 Mio TAM; gegen 10+ Inkumbenten Bootstrap unmöglich."],
+    w:[null,"fail","high","🚩 RED FLAG: Smart Integrity Platform (DE, 800 IT-Dienstleister-Channel per smartintegrityplatform.com/de/aml-software-mit-ki), ACTICO Compliance Suite mit MLDS (DE), Sumsub (AI-AML-Screening per sumsub.com), Tipalti (Vendor-Screening), Validato Regulations (DE, AMLD6-Automatisierung per mittelstandcafe.de), Refinitiv/LSEG World-Check, Dow Jones Risk & Compliance, Sayari, IntegrityNext, Tecalis. 10+ direkte DE/EU/US-Wettbewerber im AML/Vendor-Screening-Markt. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
+,
+{n:"PeBeM Pflegeheim-Personalbemessungs-AI",r:"26.05 Daily",cat:"HealthTech/B2B",k_app:false,stage:"red-flag",
+  desc:"AI-Personalbemessungs-Tool für stationäre Pflegeeinrichtungen nach § 113c SGB XI (PeBeM). Pool ~13k Pflegeheime DE. Wedge: AI-gestützt vs. statische Berechnungs-Tools.",
+  brief_v1:{core_problem:"PeBeM-Pflicht-Frist 31.12.25 vorbei; alle stationären Pflegeeinrichtungen müssen ab 01.01.26 PeBeM-konform sein",target_customer:"Pflegeheime stationär (~13k DE)",economic_buyer:"PDL/Heimleitung",product_concept:"SaaS-PeBeM-Rechner mit Schicht-Auto-Optimierung",current_alternative:"Vivendi/SinusControl + Excel",why_now:"PeBeM seit 01.01.26 Pflicht — Trigger bereits in Kraft",monetization:"SaaS 150-500 EUR/Mo pro Heim",geography:"DACH",wedge:"AI-Schicht-Optimierung vs. statische Rechner",critical_assumptions:"(1) Heime wechseln von Vivendi-PeBeM-Modul zu Standalone (2) AI-Wedge nachhaltig"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[15,"pass","high","PeBeM-Pflicht seit 01.01.26 in Kraft; 13k Pflegeheime DE Pool — aber Trigger bereits abgeebbt: Pflicht-Frist 31.12.25 vorbei + Marktführer haben PeBeM-Module live."],
+    m:[14,"pass","medium","SaaS-Rechner mit Schicht-Optimierung in 6 Mo machbar."],
+    t:[8,"fail","medium","Pflegeheim-IT 6-12 Mo Cycles; Vivendi-Lock-in stark."],
+    k:[7,"fail","medium","🚩 AI-Schicht-Optimierung Commodity; Vivendi-Connext + compassio bauen direkt ein."],
+    e:[7,"fail","medium","150-500 × 5k Heime = 9-30 Mio Theorie; gegen Marktführer Bootstrap unmöglich."],
+    w:[null,"fail","high","🚩 RED FLAG: Connext Vivendi (DE-Marktführer für Pflegesoftware, PeBeM-Modul live seit 2024 per connext.de/software/vivendi-pd/pflege.aspx + compassio-Partnerschaft 2025 per compassio.de), MAJA Cloud Vivendi (DE), Curacon (DE-Beratung für PeBeM § 113c SGB XI per curacon.de/neuigkeiten/neue-pflegebemessung-113c-sgb-xi), CareRockets (DE-PeBeM-Rechner), ARS Vivendi Akademie (PeBeM-Schulung), SinusControl, ppm-online (Schulung), Relias.de (Schulung). 6+ direkte DE-Wettbewerber INKL. Marktführer Connext Vivendi mit aktivem PeBeM-Modul. Hard-Fail-Trigger massiv erfüllt + Pflicht-Frist bereits vorbei."]},c_v2:null
+}
+,
+{n:"PIM-Light für Mittelstands-Hersteller GPSR",r:"26.05 Daily",cat:"SaaS/B2B",k_app:false,stage:"red-flag",
+  desc:"PIM-Light-SaaS für Mittelstands-Hersteller zur Erfüllung der GPSR-Pflicht-Produktdaten + EU-Verantwortlicher-Doku. Pool ~12k DE-Hersteller mit B2C-Vertrieb.",
+  brief_v1:{core_problem:"GPSR seit 13.12.24 in Kraft; Hersteller müssen Sicherheits-/Konformitäts-Doku in CE-Form pflegen + EU-Verantwortlicher",target_customer:"Mittelstands-Hersteller 50-500 MA B2C",economic_buyer:"Marketing/Compliance",product_concept:"PIM-Light + GPSR-Datenmodell + EU-Verantwortlicher-Workflow",current_alternative:"Akeneo/Pimcore/Excel",why_now:"GPSR 13.12.24 Pflicht; aber kein neuer 2026-Trigger",monetization:"SaaS 200-700 EUR/Mo",geography:"DACH",wedge:"GPSR-fokussierter PIM-Light vs. Voll-PIM-Stack",critical_assumptions:"(1) Akeneo/Pimcore rüsten kein GPSR-Modul nach (2) Mittelstand kauft Standalone"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[13,"pass","medium","GPSR-Pflicht seit 13.12.24 — Trigger bereits abgeebbt; Pool ~12k Hersteller; aber Awareness niedrig."],
+    m:[14,"pass","medium","PIM-Light in 5 Mo machbar."],
+    t:[8,"fail","medium","Mittelstand-Marketing-Buyer 6-12 Mo; Akeneo/Pimcore haben Bestand."],
+    k:[7,"fail","medium","🚩 GPSR-Datenmodell Commodity; alle PIM-Anbieter haben GPSR-Templates."],
+    e:[8,"fail","medium","200-700 × 5k = 12-42 Mio Theorie; 20-Mio-Pfad ambitioniert; Bootstrap-Marketing-Risk."],
+    w:[null,"fail","high","🚩 RED FLAG: Akeneo (FR, GPSR-Template-Update 2025), Pimcore (AT/DE, GPSR-Modul live), Contentserv (DE, GPSR-Stack), SAP Master Data (Konzern), Salsify, Plytix (B2C), inriver, OneStone (DE). 7+ direkte EU/DE-Wettbewerber besetzen GPSR-Layer in voll-PIM. Hard-Fail-Trigger massiv erfüllt."]},c_v2:null
+}
+,
+{n:"AI-Versicherungsmakler-Pflicht-Beratungs-Doku",r:"26.05 Daily",cat:"InsurTech/B2B",k_app:true,stage:"red-flag",
+  desc:"AI-gestütztes Beratungsdokumentations-Tool für DE-Versicherungsmakler nach § 61 VVG / IDD. Pool ~45k Makler DE. Wedge: KI-Voice/Auto-Draft vs. Template-basierte MVP.",
+  brief_v1:{core_problem:"§ 61 VVG + IDD-Pflicht-Beratungs-Doku; ~45k DE-Makler dokumentieren manuell",target_customer:"Versicherungsmakler 1-20 MA",economic_buyer:"Inhaber/Makler",product_concept:"AI-Voicebot + Auto-Doku-Generator IDD-konform",current_alternative:"Maklerverwaltungsprogramme (MVP) mit Templates",why_now:"BaFin-Aufsicht IDD verschärft; kein 2026-Pflicht-Trigger",monetization:"SaaS 30-100 EUR/Mo pro Makler",geography:"DACH",wedge:"AI-Voice-to-Doku vs. Template-MVPs",critical_assumptions:"(1) Makler kaufen Standalone vs. MVP-Modul (2) AI-Voice-Adoption hoch genug"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[12,"pass","medium","§61 VVG-Pflicht-Doku stabil seit Jahren; kein neuer Trigger 2026."],
+    m:[13,"pass","medium","AI-Voicebot in 6 Mo machbar."],
+    t:[9,"fail","medium","45k Makler-Markt fragmentiert; MVP-Anbieter besitzen Channel."],
+    k:[9,"fail","medium","🚩 KI-Auto-Doku Standard; MVPs integrieren AI."],
+    e:[9,"fail","medium","30-100 × 15k = 5-18 Mio TAM; 20-Mio-Pfad eng; CAC fragmentiert."],
+    w:[null,"fail","high","🚩 RED FLAG: DEMV Professional Works 3.0 (DE, Marktführer Makler-Champions 2025 mit 83 Pkt, dedizierte IDD-Beratungsdoku per demv.de/leistungen/maklerverwaltungsprogramm + asscompact.de Bericht IDD-gerecht), zeitsprung MVP (DE per zeitsprung.digital), SmartInsurtech Maklersoftware (DE per smartinsurtech.de/maklersoftware), plus 46 Versicherungsmakler-Softwarelösungen im systemhaus.com Test 2025/2026. 4+ direkte DE-Marktführer INKL. DEMV mit AI-Auto-Doku-Modul. Hard-Fail-Trigger massiv erfüllt + 46 Wettbewerber im Vergleich."]},c_v2:null
+}
+,
+{n:"AI-Trinkwasser-Pflicht-Beprobung Wohngeb-Eigentümer",r:"26.05 Daily",cat:"PropTech/RegTech",k_app:false,stage:"2-complete",
+  desc:"SaaS-Workflow für Pflicht-Trinkwasser-Beprobung in Wohngebäuden (TrinkwV § 14b) + Legionellen-Audit. Pool ~26k WoBe + 22k Hausverwalter DE.",
+  brief_v1:{core_problem:"TrinkwV-Reform 2023 + Legionellen-Pflicht-Beprobung; Hausverwalter koordinieren mit zertifizierten Laboren manuell",target_customer:"Hausverwaltungen + WoBe",economic_buyer:"Hausverwalter-Inhaber",product_concept:"SaaS: Beprobungs-Workflow + Labor-API + Mieter-Kommunikation",current_alternative:"Labor-Service (SGS/eurofins/GTÜ) + Excel",why_now:"TrinkwV § 14b seit 2023 stabil; kein neuer Trigger",monetization:"SaaS 50-200 EUR/Mo + Labor-Vermittlung",geography:"DE",wedge:"Workflow-Bridge zu Labor-Service vs. Excel",critical_assumptions:"(1) Hausverwalter zahlen Workflow-SaaS (2) Labor-API-Zugang offen"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[12,"pass","medium","TrinkwV-Pflicht stabil seit 2023; Pool 26k WoBe + 22k Hausverwalter klar."],
+    m:[13,"pass","medium","Workflow-SaaS + Labor-Bridge in 5 Mo machbar; Labor-API-Standard via DAkkS-zertifizierte Labore offen."],
+    t:[11,"unknown","medium","Hausverwalter-Markt fragmentiert; etg24/casavi besitzen Channel; Inhaber-Buyer kurze Cycles."],
+    k:[9,"fail","medium","🚩 KI-Vorhersage-Module Commodity; kein nachhaltiger Wedge."],
+    e:[10,"unknown","medium","50-200 × 10k = 6-24 Mio TAM Theorie; Bootstrap-Risk durch SGS/eurofins-Beziehung Hausverwalter."],
+    w:[10,"unknown","medium","SGS/eurofins/GTÜ als Labor-Service-Dominante; Software-Layer-Anbieter: GTÜ-Self-Service-Portal, eurofins Connect, AI-Pumpen-IoT (SUSI&James, OWGS). 4+ etablierte Player auf Service-Layer; Workflow-Bridge möglich aber knapp."]},
+  // Effective-Score: 12 + 13 + 11×0.6 + 9×0.4 + 10×0.6 + 10×0.6 = 12+13+6.6+3.6+6+6 = 47.2 → norm 47 (k_app:false, max 100); nicht promotable
+  c_v2:null
+}
+,
+{n:"AI-Pflegedienst-Tourenplaner SGB-XI Routing",r:"26.05 Daily",cat:"HealthTech/Log",k_app:true,stage:"2-complete",
+  desc:"AI-gestützter Tourenplaner für ambulante Pflegedienste mit SGB-XI-Routing-Compliance. Pool ~15k amb. Pflegedienste DE. Wedge: AI-Re-Routing für Last-Minute-Patientenwechsel.",
+  brief_v1:{core_problem:"15k amb. Pflegedienste DE planen 8-12 Patienten/Tour manuell; Last-Minute-Änderungen kosten 30-60 min Tour-Rebuild",target_customer:"Amb. Pflegedienste 10-100 MA",economic_buyer:"PDL/Inhaber",product_concept:"SaaS Tourenplaner mit AI-Re-Routing + SGB-XI-Doku",current_alternative:"CGM Care/myneva/Senso + Excel",why_now:"Pflegekassen-Reform 2025 + Personalmangel-Druck",monetization:"SaaS 50-150 EUR/Mo pro Pflegedienst",geography:"DACH",wedge:"AI-Last-Minute-Re-Routing vs. statische Tourenplaner",critical_assumptions:"(1) Pflegedienste wechseln von CGM/myneva (2) AI-Re-Routing Wedge nachhaltig"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[13,"pass","medium","Personalmangel-Pain real; ~15k amb. Pflegedienste DE; Tourenplanung Top-3-Pain."],
+    m:[12,"pass","medium","SaaS Tourenplaner mit AI-Re-Routing in 7 Mo machbar; aber SGB-XI-Doku-Integration mit CGM-Walled-Garden komplex."],
+    t:[10,"unknown","medium","PDL-Buyer 6-9 Mo Cycles; CGM Care als Inkumbent."],
+    k:[10,"unknown","medium","KI-Routing-Optimierung profitiert; aber Routific/myneva expandieren AI-Modul."],
+    e:[10,"unknown","medium","50-150 × 7k = 4-13 Mio TAM; 20-Mio-Pfad eng; Bootstrap-CAC schwierig vs CGM-Bestand."],
+    w:[9,"fail","medium","CGM Care (DE-Marktführer Pflege-Software, AI-Modul 2025 live), myneva (DE), Senso (DE), Routific (CA, EU-aktiv), MD Medicus, Vivendi mobil. 6+ direkte DE/EU-Wettbewerber. Hard-Fail-Trigger erfüllt aber kein klassischer Red-Flag — Wedge-Window für AI-Re-Routing möglich."]},
+  // Effective-Score: 13+12+10×0.6+10×0.6+10×0.6+9×0.4 = 13+12+6+6+6+3.6 = 46.6 → norm 47 (k_app:true, max 120, norm = 46.6/120*100 = 39)
+  c_v2:null
+}
+,
+{n:"EPBD-Energieausweis-AI Mehrfamilienhaus",r:"26.05 Daily",cat:"PropTech/Energy",k_app:true,stage:"2-complete",
+  desc:"AI-gestützter Energieausweis-Generator für Mehrfamilienhäuser nach EU EPBD-Recast 04/24. DE-Umsetzung 2026.",
+  brief_v1:{core_problem:"EU EPBD Recast 04/24 + iSFP-Pflicht 2026; Mehrfamilienhaus-Eigentümer brauchen Energieausweis + Sanierungsplan",target_customer:"Hausverwalter + Eigentümer Mehrfamilienhaus",economic_buyer:"Eigentümer/Hausverwalter",product_concept:"AI-Generator EnEV-Bedarfsausweis + iSFP-Vorbericht",current_alternative:"Energieberater 800-2500 EUR + Plan A-Tool",why_now:"EPBD Recast 04/24; DE-Umsetzung 2026 mit iSFP-Pflicht",monetization:"SaaS 200-500 EUR pro Ausweis",geography:"DACH",wedge:"AI-Auto-Generator vs. Energieberater-Service",critical_assumptions:"(1) Energieberater-Lizenz für Ausweis-Ausstellung umgehbar via Partner-Modell (2) Plan A/co2online nicht expandieren"},
+  brief_v2_updates:null,anti_brief:null,customer_brief:null,
+  c:{b:[13,"pass","medium","EPBD-Recast + iSFP-Pflicht 2026 echt; aber DE-Umsetzungsstand unklar bis Q3/26."],
+    m:[12,"pass","medium","AI-Auto-Generator in 6 Mo machbar; aber Energieberater-Lizenz-Pflicht für offizielle Ausstellung bleibt blockierend."],
+    t:[9,"fail","medium","Eigentümer-B2C-CAC tot; Hausverwalter-Channel langsam."],
+    k:[10,"unknown","medium","KI-iSFP-Drafting Commodity 2026; Plan A integriert."],
+    e:[9,"fail","medium","200-500 EUR/Ausweis × 100k/J = 20-50 Mio Theorie; aber Energieberater-Lizenz-Bottleneck."],
+    w:[8,"fail","medium","Plan A (DE, iSFP-Spezialist), co2online (DE), Hottgenroth (Energieausweis-Software-Marktführer DE), enprovia (Energieberater-Tool), DENA (offiziell), ImmobilienScout24 Energiepass. 5+ direkte DE-Anbieter mit Energieberater-Channel. Hard-Fail-Trigger erfüllt; Wedge-Window minimal."]},
+  // Effective: 13+12+9×0.4+10×0.6+9×0.4+8×0.4 = 13+12+3.6+6+3.6+3.2 = 41.4 → norm 35
+  c_v2:null
 }
 ];
 
