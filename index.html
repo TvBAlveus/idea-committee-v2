@@ -2828,6 +2828,12 @@ const pipeline = [
   ["2026-06-02","AI-Forst-Inventur Sägewerks-Bridge EUDR-Holz","RegTech/Forest","Holzwirtschafts-Tools","DE-Forst-Mid",3,"Reject","Holzwirtschafts-Tools etabliert."],
 ];
 
+// Defensiv: sparse/undefined-Einträge (Trailing-Comma aus früheren Runs) entfernen,
+// sonst wirft pipeline.map() und der GESAMTE Script-Block bricht ab (Grids bleiben leer).
+for (let i = pipeline.length - 1; i >= 0; i--) {
+  if (!pipeline[i] || !Array.isArray(pipeline[i])) { pipeline.splice(i, 1); }
+}
+
 // Daten-Mapping: original [Datum, Idee, Kategorie, Inspiration, Zielkunde, Score, Verdict, Killer]
 // → angezeigt als [Idee, Verdict, Score, Killer/These, Datum, Kategorie, Inspiration, Zielkunde]
 const pipelineDisplay = pipeline.map(r => [r[1], r[6], r[5], r[7], r[0], r[2], r[3], r[4]]);
